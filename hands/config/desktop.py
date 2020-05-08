@@ -10,5 +10,13 @@ def get_data():
 			"icon": "octicon octicon-file-directory",
 			"type": "module",
 			"label": _("HandS App")
+		},
+		{
+			"module_name": "System Management",
+			"color": "grey",
+			"icon": "octicon octicon-star",
+			"type": "module",
+			"label": _("ISO Systems Management")
 		}
+
 	]

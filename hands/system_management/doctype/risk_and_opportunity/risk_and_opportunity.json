@@ -1,0 +1,179 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-08 23:49:15.280003",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "ro_type",
+  "ro_category",
+  "ro_source",
+  "column_break_5",
+  "ms",
+  "department",
+  "section_break_8",
+  "risk_description",
+  "risk_propability",
+  "risk_impact",
+  "risk_rate",
+  "column_break_13",
+  "proposed_review_date",
+  "actions_proposed",
+  "proposed_completion_date"
+ ],
+ "fields": [
+  {
+   "default": "RO-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "RO-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "ro_type",
+   "fieldtype": "Link",
+   "label": "Risk and Opportunity Type",
+   "options": "Risk and Opportunity Type"
+  },
+  {
+   "fieldname": "ro_category",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Risk Category",
+   "options": "Risk Category"
+  },
+  {
+   "columns": 2,
+   "fieldname": "ro_source",
+   "fieldtype": "Data",
+   "label": "Risk/Opportunity source or activity",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ms",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Management System",
+   "options": "Management Systems"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "bold": 1,
+   "fieldname": "risk_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Risk Description",
+   "translatable": 1
+  },
+  {
+   "fieldname": "risk_propability",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Risk Propability",
+   "options": "\nLow\nMedium\nHigh",
+   "translatable": 1
+  },
+  {
+   "fieldname": "risk_impact",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Risk Impact",
+   "options": "\nLow\nMedium\nHigh",
+   "translatable": 1
+  },
+  {
+   "fieldname": "risk_rate",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Risk Rate",
+   "options": "\nLow\nMedium\nHigh",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "proposed_review_date",
+   "fieldtype": "Date",
+   "label": "Proposed Review Date"
+  },
+  {
+   "fieldname": "actions_proposed",
+   "fieldtype": "Small Text",
+   "label": "Actions Proposed",
+   "translatable": 1
+  },
+  {
+   "fieldname": "proposed_completion_date",
+   "fieldtype": "Date",
+   "label": "Proposed Completion Date"
+  }
+ ],
+ "modified": "2020-05-08 23:59:05.330950",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Risk and Opportunity",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ISO Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "risk_description",
+ "track_changes": 1
+}
