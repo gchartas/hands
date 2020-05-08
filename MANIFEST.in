@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include hands *.css
+recursive-include hands *.csv
+recursive-include hands *.html
+recursive-include hands *.ico
+recursive-include hands *.js
+recursive-include hands *.json
+recursive-include hands *.md
+recursive-include hands *.png
+recursive-include hands *.py
+recursive-include hands *.svg
+recursive-include hands *.txt
+recursive-exclude hands *.pyc
