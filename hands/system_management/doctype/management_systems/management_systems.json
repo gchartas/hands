@@ -1,0 +1,59 @@
+{
+ "autoname": "field:management_system",
+ "creation": "2020-05-08 20:10:34.734860",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "management_system"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "bold": 1,
+   "fieldname": "management_system",
+   "fieldtype": "Data",
+   "label": "Management System",
+   "search_index": 1,
+   "set_only_once": 1,
+   "translatable": 1,
+   "unique": 1
+  }
+ ],
+ "modified": "2020-05-08 20:19:08.426143",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Management Systems",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
