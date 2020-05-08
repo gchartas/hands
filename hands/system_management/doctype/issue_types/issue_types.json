@@ -1,29 +1,40 @@
 {
- "autoname": "field:management_system",
- "creation": "2020-05-08 20:10:34.734860",
+ "autoname": "field:issue_type",
+ "creation": "2020-05-08 21:17:46.463848",
  "doctype": "DocType",
  "document_type": "Setup",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "management_system"
+  "system",
+  "issue_type"
  ],
  "fields": [
   {
    "allow_in_quick_entry": 1,
+   "fieldname": "system",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "System",
+   "options": "Management Systems",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
    "bold": 1,
-   "fieldname": "management_system",
+   "fieldname": "issue_type",
    "fieldtype": "Data",
-   "label": "Management System",
-   "set_only_once": 1,
-   "translatable": 1,
+   "in_list_view": 1,
+   "label": "Issue Type",
+   "reqd": 1,
    "unique": 1
   }
  ],
- "modified": "2020-05-08 20:58:14.850995",
+ "modified": "2020-05-08 21:19:27.159328",
  "modified_by": "Administrator",
  "module": "System Management",
- "name": "Management Systems",
+ "name": "Issue Types",
  "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
@@ -66,5 +77,6 @@
  "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "issue_type",
  "track_changes": 1
 }

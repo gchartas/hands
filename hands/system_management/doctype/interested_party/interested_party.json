@@ -1,0 +1,141 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-08 21:10:05.852931",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "stakeholder",
+  "stakeholder_type",
+  "rne",
+  "impact",
+  "column_break_5",
+  "management_system",
+  "department",
+  "department_impact",
+  "site",
+  "section_break_10"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "stakeholder",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Interested Party or Stakeholder",
+   "search_index": 1,
+   "set_only_once": 1,
+   "translatable": 1
+  },
+  {
+   "bold": 1,
+   "fieldname": "stakeholder_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Party Type",
+   "options": "\nInternal\nExternal",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "rne",
+   "fieldtype": "Data",
+   "label": "Requirements | Needs | Expectations"
+  },
+  {
+   "fieldname": "impact",
+   "fieldtype": "Small Text",
+   "label": "Impact On the Organization"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "management_system",
+   "fieldtype": "Link",
+   "label": "Management System",
+   "options": "Management Systems"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "department_impact",
+   "fieldtype": "Small Text",
+   "label": "Department Impact"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Data",
+   "label": "Site"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "IP-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "IP-",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-05-08 21:14:47.518646",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Interested Party",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ISO Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "stakeholder",
+ "track_changes": 1
+}

@@ -1,0 +1,192 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-08 20:45:15.552161",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "mark",
+  "reason",
+  "column_break_4",
+  "scope",
+  "department",
+  "site",
+  "approving_authority",
+  "swot_section",
+  "strenght",
+  "opportunity",
+  "column_break_12",
+  "weakness",
+  "threat",
+  "pestle_section",
+  "political",
+  "social",
+  "legal",
+  "column_break_19",
+  "economic",
+  "technological",
+  "environmental"
+ ],
+ "fields": [
+  {
+   "default": "COTO-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "COTO-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "mark",
+   "fieldtype": "Small Text",
+   "label": "Where Do We Aim to Be?"
+  },
+  {
+   "fieldname": "reason",
+   "fieldtype": "Small Text",
+   "label": "Why This Business Is Good Business to Be In?"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Small Text",
+   "label": "What Do We Do? What Makes Us Different?"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "site",
+   "fieldtype": "Data",
+   "label": "Site"
+  },
+  {
+   "fieldname": "approving_authority",
+   "fieldtype": "Data",
+   "label": "Approving Authority"
+  },
+  {
+   "fieldname": "swot_section",
+   "fieldtype": "Section Break",
+   "label": "SWOT"
+  },
+  {
+   "fieldname": "strenght",
+   "fieldtype": "Text Editor",
+   "label": "Strenght"
+  },
+  {
+   "fieldname": "opportunity",
+   "fieldtype": "Text Editor",
+   "label": "Opportunity"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "weakness",
+   "fieldtype": "Text Editor",
+   "label": "Weakness"
+  },
+  {
+   "fieldname": "threat",
+   "fieldtype": "Text Editor",
+   "label": "Threat"
+  },
+  {
+   "fieldname": "pestle_section",
+   "fieldtype": "Section Break",
+   "label": "PESTLE"
+  },
+  {
+   "fieldname": "political",
+   "fieldtype": "Small Text",
+   "label": "Political"
+  },
+  {
+   "fieldname": "social",
+   "fieldtype": "Small Text",
+   "label": "Social"
+  },
+  {
+   "fieldname": "legal",
+   "fieldtype": "Small Text",
+   "label": "Legal"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "economic",
+   "fieldtype": "Small Text",
+   "label": "Economic"
+  },
+  {
+   "fieldname": "technological",
+   "fieldtype": "Small Text",
+   "label": "Technological"
+  },
+  {
+   "fieldname": "environmental",
+   "fieldtype": "Small Text",
+   "label": "Environmental"
+  }
+ ],
+ "modified": "2020-05-08 20:58:34.483503",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Context of Organization",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ISO Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
