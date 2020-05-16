@@ -1,0 +1,241 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-12 16:20:34.702688",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "product",
+  "section_break_3",
+  "qty",
+  "column_break_5",
+  "uom",
+  "section_break_7",
+  "quality_inspection_required",
+  "quality_inspection_template",
+  "raw_materials",
+  "allergens_section",
+  "peanut",
+  "tree_nuts",
+  "milk",
+  "column_break_14",
+  "eggs",
+  "wheat",
+  "sesame",
+  "column_break_16",
+  "fish",
+  "crustacens",
+  "molluscs",
+  "column_break_19",
+  "mustard",
+  "soya",
+  "sulphur_dioxide",
+  "column_break_22",
+  "lupin",
+  "celery"
+ ],
+ "fields": [
+  {
+   "default": "RN-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "RecipeNo",
+   "options": "RN-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Product"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Data",
+   "label": "Qty"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "quality_inspection_required",
+   "fieldtype": "Check",
+   "label": "Quality Inspection Required"
+  },
+  {
+   "fieldname": "quality_inspection_template",
+   "fieldtype": "Link",
+   "label": "Quality Inspection Template",
+   "options": "Quality Inspection Template"
+  },
+  {
+   "fieldname": "raw_materials",
+   "fieldtype": "Table",
+   "label": "Raw Materials",
+   "options": "Recipe Items"
+  },
+  {
+   "fieldname": "allergens_section",
+   "fieldtype": "Section Break",
+   "label": "Allergens"
+  },
+  {
+   "fieldname": "celery",
+   "fieldtype": "Select",
+   "label": "Celery and Celerians",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "crustacens",
+   "fieldtype": "Select",
+   "label": "Crustacens",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "eggs",
+   "fieldtype": "Select",
+   "label": "Eggs",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "fish",
+   "fieldtype": "Select",
+   "label": "Fish",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "lupin",
+   "fieldtype": "Select",
+   "label": "Lupin",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "milk",
+   "fieldtype": "Select",
+   "label": "Milk",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "molluscs",
+   "fieldtype": "Select",
+   "label": "Molluscs",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "mustard",
+   "fieldtype": "Select",
+   "label": "Mustard",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_22",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "peanut",
+   "fieldtype": "Select",
+   "label": "Peanut",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sesame",
+   "fieldtype": "Select",
+   "label": "Sesame",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "soya",
+   "fieldtype": "Select",
+   "label": "Soya",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sulphur_dioxide",
+   "fieldtype": "Select",
+   "label": "Sulphur Dioxide",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "tree_nuts",
+   "fieldtype": "Select",
+   "label": "Tree Nuts",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "wheat",
+   "fieldtype": "Select",
+   "label": "Wheat",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "modified": "2020-05-12 18:52:27.636469",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Recipe",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "product",
+ "track_changes": 1
+}

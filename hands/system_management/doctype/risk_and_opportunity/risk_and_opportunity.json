@@ -20,7 +20,8 @@
   "column_break_13",
   "proposed_review_date",
   "actions_proposed",
-  "proposed_completion_date"
+  "proposed_completion_date",
+  "amended_from"
  ],
  "fields": [
   {
@@ -106,6 +107,7 @@
    "in_list_view": 1,
    "label": "Risk Rate",
    "options": "\nLow\nMedium\nHigh",
+   "read_only": 1,
    "translatable": 1
   },
   {
@@ -127,9 +129,19 @@
    "fieldname": "proposed_completion_date",
    "fieldtype": "Date",
    "label": "Proposed Completion Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Risk and Opportunity",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2020-05-08 23:59:05.330950",
+ "is_submittable": 1,
+ "modified": "2020-05-12 09:38:25.358819",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Risk and Opportunity",

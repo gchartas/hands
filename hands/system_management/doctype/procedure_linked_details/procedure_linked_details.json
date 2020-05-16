@@ -1,0 +1,38 @@
+{
+ "creation": "2020-05-10 11:48:22.635676",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "proc_ref",
+  "proc_title"
+ ],
+ "fields": [
+  {
+   "fieldname": "proc_ref",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Procedure Reference",
+   "options": "Procedure"
+  },
+  {
+   "fieldname": "proc_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Procedure Title",
+   "options": "proc_ref.title",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-10 11:51:00.376768",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Procedure Linked Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,163 @@
+{
+ "creation": "2020-05-12 14:16:36.009000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "processing_stage",
+  "control_position",
+  "type_of_risk",
+  "control_measures",
+  "control_parameters",
+  "critical_limit",
+  "monitoring_system",
+  "designation",
+  "section_break_9",
+  "correnctive_action_1",
+  "column_break_13",
+  "corrective_action_directive_1",
+  "section_break_13",
+  "correnctive_action_2",
+  "column_break_15",
+  "corrective_action_directive_2",
+  "section_break_17",
+  "correnctive_action_3",
+  "column_break_19",
+  "corrective_action_directive_3"
+ ],
+ "fields": [
+  {
+   "fieldname": "processing_stage",
+   "fieldtype": "Link",
+   "label": "Processing Stage",
+   "options": "Process Diagram Test"
+  },
+  {
+   "fieldname": "control_position",
+   "fieldtype": "Link",
+   "label": "Control Position",
+   "options": "Workstation"
+  },
+  {
+   "fieldname": "type_of_risk",
+   "fieldtype": "Data",
+   "label": "Type of Risk"
+  },
+  {
+   "fetch_from": "processing_stage.stage_control",
+   "fieldname": "control_measures",
+   "fieldtype": "Data",
+   "label": "Control Measures"
+  },
+  {
+   "fieldname": "control_parameters",
+   "fieldtype": "Data",
+   "label": "Control Parameters"
+  },
+  {
+   "fieldname": "critical_limit",
+   "fieldtype": "Data",
+   "label": "Critical Limit"
+  },
+  {
+   "fieldname": "monitoring_system",
+   "fieldtype": "Data",
+   "label": "Monitoring System"
+  },
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "correnctive_action_1",
+   "fieldtype": "Link",
+   "label": "Correnctive Action 1",
+   "options": "Corrective Actions"
+  },
+  {
+   "columns": 1,
+   "fieldname": "correnctive_action_2",
+   "fieldtype": "Link",
+   "label": "Correnctive Action 2",
+   "options": "Corrective Actions"
+  },
+  {
+   "columns": 1,
+   "fieldname": "correnctive_action_3",
+   "fieldtype": "Link",
+   "label": "Correnctive Action 3",
+   "options": "Corrective Actions"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "correnctive_action_1.corrective_action",
+   "fieldname": "corrective_action_directive_1",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action Directive 1"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "correnctive_action_2.corrective_action",
+   "fieldname": "corrective_action_directive_2",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action Directive 2"
+  },
+  {
+   "columns": 3,
+   "fetch_from": "correnctive_action_3.corrective_action",
+   "fieldname": "corrective_action_directive_3",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action Directive 3"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_17",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "modified": "2020-05-12 15:16:36.566756",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "HACCP Plan Test",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,42 @@
+{
+ "creation": "2020-05-15 18:01:40.005952",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "input_required",
+  "source_of_input",
+  "associated_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "input_required",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Input Required"
+  },
+  {
+   "fieldname": "source_of_input",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Source of Input"
+  },
+  {
+   "fieldname": "associated_data",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Associated Data/Resources Required"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-15 18:05:20.258967",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Process Input Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,104 @@
+{
+ "creation": "2020-05-12 20:10:25.429366",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "temp_status",
+  "item",
+  "item_name",
+  "temp",
+  "order_qty",
+  "uom",
+  "received_qty",
+  "exp_date",
+  "status",
+  "moisture",
+  "return_to_supplier"
+ ],
+ "fields": [
+  {
+   "bold": 1,
+   "fieldname": "temp_status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nFrozen\nCooled\nDry Storage"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Raw Material"
+  },
+  {
+   "default": "Everything",
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "temp",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Temp"
+  },
+  {
+   "fieldname": "order_qty",
+   "fieldtype": "Float",
+   "label": "Order Qty",
+   "precision": "1"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "default": "1",
+   "fieldname": "received_qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Received Qty"
+  },
+  {
+   "default": "1",
+   "fieldname": "exp_date",
+   "fieldtype": "Check",
+   "label": "Exp Date"
+  },
+  {
+   "default": "1",
+   "fieldname": "status",
+   "fieldtype": "Check",
+   "label": "Status"
+  },
+  {
+   "default": "1",
+   "fieldname": "moisture",
+   "fieldtype": "Check",
+   "label": "Moisture"
+  },
+  {
+   "default": "0",
+   "fieldname": "return_to_supplier",
+   "fieldtype": "Check",
+   "label": "Return to Supplier"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-12 20:10:31.876580",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Receiving Goods Table",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

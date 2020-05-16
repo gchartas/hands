@@ -1,0 +1,56 @@
+{
+ "creation": "2020-05-13 21:48:20.787877",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "cb_00",
+  "rating",
+  "sb_00",
+  "feedback"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "read_only": 1
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rating",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Rating",
+   "options": "\n1\n2\n3\n4\n5\n6",
+   "precision": "0",
+   "reqd": 1
+  },
+  {
+   "fieldname": "sb_00",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "feedback",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Feedback"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-13 21:48:20.787877",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Supplier Evaluation Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

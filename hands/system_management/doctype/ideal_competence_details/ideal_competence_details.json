@@ -1,0 +1,57 @@
+{
+ "creation": "2020-05-13 18:59:33.786050",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "competence_type",
+  "description",
+  "ideal_value",
+  "weight"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "competence_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Competence Type",
+   "options": "\nEducation\nExperience\nFunctional\nOperational\nTechnical"
+  },
+  {
+   "columns": 5,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "unique": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "ideal_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ideal Value",
+   "precision": "0"
+  },
+  {
+   "default": "1",
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Weight",
+   "precision": "1"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-13 19:04:51.930008",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Ideal Competence Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

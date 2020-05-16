@@ -1,0 +1,186 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-12 19:18:20.730073",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "fridge",
+  "column_break_4",
+  "employee_name",
+  "fridge_type",
+  "section_break_7",
+  "now",
+  "column_break_9",
+  "date",
+  "column_break_11",
+  "time",
+  "section_break_13",
+  "temp",
+  "column_break_15",
+  "ideal_temp",
+  "section_break_15",
+  "employee_signature",
+  "emp_name",
+  "column_break_18",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "FTC-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "FTC-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "fridge",
+   "fieldtype": "Link",
+   "label": "Fridge",
+   "options": "Fridge List"
+  },
+  {
+   "fetch_from": "fridge.fridge_type",
+   "fieldname": "fridge_type",
+   "fieldtype": "Select",
+   "label": "Fridge Type",
+   "options": "\nRefridgirator\nFreezer",
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_7",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "now",
+   "fieldtype": "Button",
+   "label": "Now"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "00:00:00",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time",
+   "set_only_once": 1
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "temp",
+   "fieldtype": "Float",
+   "label": "Temp",
+   "precision": "1"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "employee_signature",
+   "fieldtype": "Signature",
+   "label": "Employee Signature"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Emp Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Fridge Temp Control",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "fridge.temp",
+   "fieldname": "ideal_temp",
+   "fieldtype": "Data",
+   "label": "Ideal Temp",
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-12 19:40:18.822903",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Fridge Temp Control",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

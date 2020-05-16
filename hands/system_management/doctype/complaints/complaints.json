@@ -1,0 +1,133 @@
+{
+ "autoname": "format:{#####}",
+ "creation": "2020-05-15 13:40:34.432389",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "ms",
+  "nc_date",
+  "nc_type",
+  "department",
+  "nc_details",
+  "nc_pr",
+  "nc_sr",
+  "nc_process",
+  "nc_product",
+  "nc_location",
+  "nc_source",
+  "nc_site",
+  "nc_criticality"
+ ],
+ "fields": [
+  {
+   "default": "CR-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "CR-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "ms",
+   "fieldtype": "Link",
+   "label": "Management System",
+   "options": "Management Systems"
+  },
+  {
+   "fieldname": "nc_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Non Conformity Date"
+  },
+  {
+   "default": "Customer Complaint",
+   "fieldname": "nc_type",
+   "fieldtype": "Select",
+   "label": "Non Conformity Type",
+   "options": "\nAir Emission\nCustomer Complaint\nExternal Audit\nFinal Inspection\nHSE Inspection\nIncoming Inspection\nInProcess Inspection\nInternal Audit\nPPE Inspection\nSolid Waste\nWater Waste"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "nc_details",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Non Conformity Details"
+  },
+  {
+   "fieldname": "nc_pr",
+   "fieldtype": "Link",
+   "label": "Primary Responsibility",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "nc_sr",
+   "fieldtype": "Link",
+   "label": "Secondary Responsibility",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "nc_process",
+   "fieldtype": "Data",
+   "label": "Process"
+  },
+  {
+   "fieldname": "nc_product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "nc_location",
+   "fieldtype": "Data",
+   "label": "Location"
+  },
+  {
+   "fieldname": "nc_source",
+   "fieldtype": "Data",
+   "label": "Source"
+  },
+  {
+   "fieldname": "nc_site",
+   "fieldtype": "Data",
+   "label": "Site"
+  },
+  {
+   "fieldname": "nc_criticality",
+   "fieldtype": "Data",
+   "label": "Non Conformity Criticality"
+  }
+ ],
+ "modified": "2020-05-15 13:40:34.432389",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Complaints",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "nc_details",
+ "track_changes": 1
+}

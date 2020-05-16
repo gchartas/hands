@@ -20,7 +20,7 @@
    "unique": 1
   }
  ],
- "modified": "2020-05-08 23:33:27.250956",
+ "modified": "2020-05-11 20:15:35.833336",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Risk Category",
@@ -62,7 +62,9 @@
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
- "sort_order": "DESC",
+ "search_fields": "risk_category",
+ "sort_field": "risk_category",
+ "sort_order": "ASC",
+ "title_field": "risk_category",
  "track_changes": 1
 }

@@ -1,0 +1,210 @@
+{
+ "autoname": "field:ref_no",
+ "creation": "2020-05-10 10:32:02.464256",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "section_break_2",
+  "ref_no",
+  "column_break_4",
+  "rev",
+  "column_break_6",
+  "publish_date",
+  "column_break_8",
+  "next_review_date",
+  "revision_history_section",
+  "rev_table",
+  "relevant_forms_section",
+  "relevant_forms",
+  "linked_procedures_section",
+  "procedure_linked_table",
+  "procedure_section",
+  "procedure",
+  "reference_section",
+  "reference",
+  "details_section",
+  "company",
+  "author"
+ ],
+ "fields": [
+  {
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Document Refence",
+   "set_only_once": 1,
+   "unique": 1
+  },
+  {
+   "default": "1.0",
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Revision"
+  },
+  {
+   "bold": 1,
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "search_index": 1,
+   "translatable": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "revision_history_section",
+   "fieldtype": "Section Break",
+   "label": "Revision History"
+  },
+  {
+   "fieldname": "rev_table",
+   "fieldtype": "Table",
+   "label": "Revision Table",
+   "options": "Procedure Revision History"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "relevant_forms_section",
+   "fieldtype": "Section Break",
+   "label": "Relevant Forms"
+  },
+  {
+   "fieldname": "relevant_forms",
+   "fieldtype": "Table",
+   "label": "Relevant Forms",
+   "options": "Forms Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "linked_procedures_section",
+   "fieldtype": "Section Break",
+   "label": "Linked Procedures"
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date"
+  },
+  {
+   "fieldname": "procedure_linked_table",
+   "fieldtype": "Table",
+   "label": "Procedure Linked Table",
+   "options": "Procedure Linked Details"
+  },
+  {
+   "fieldname": "procedure_section",
+   "fieldtype": "Section Break",
+   "label": "Procedure"
+  },
+  {
+   "fieldname": "procedure",
+   "fieldtype": "Text Editor",
+   "label": "Procedure"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "reference_section",
+   "fieldtype": "Section Break",
+   "label": "Reference"
+  },
+  {
+   "fieldname": "reference",
+   "fieldtype": "Table",
+   "label": "Reference",
+   "options": "Reference Details"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "default": "George Chartas",
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author",
+   "translatable": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "modified": "2020-05-10 11:49:00.790854",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Procedure",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ISO Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "title",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

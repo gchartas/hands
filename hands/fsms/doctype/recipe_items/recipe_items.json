@@ -1,0 +1,172 @@
+{
+ "creation": "2020-05-12 16:24:15.957652",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "raw_material",
+  "qty",
+  "uom",
+  "peanut",
+  "tree_nuts",
+  "milk",
+  "eggs",
+  "wheat",
+  "sesame",
+  "fish",
+  "crustacens",
+  "molluscs",
+  "mustard",
+  "soya",
+  "sulphur_dioxide",
+  "lupin",
+  "celery"
+ ],
+ "fields": [
+  {
+   "fieldname": "raw_material",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Raw Material",
+   "options": "Raw Material",
+   "reqd": 1
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Qty"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fetch_from": "raw_material.celery_and_celerians",
+   "fieldname": "celery",
+   "fieldtype": "Select",
+   "label": "Celery and Celerians",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "raw_material.crustacens",
+   "fieldname": "crustacens",
+   "fieldtype": "Select",
+   "label": "Crustacens",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.eggs",
+   "fieldname": "eggs",
+   "fieldtype": "Select",
+   "label": "Eggs",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.fish",
+   "fieldname": "fish",
+   "fieldtype": "Select",
+   "label": "Fish",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.lupin",
+   "fieldname": "lupin",
+   "fieldtype": "Select",
+   "label": "Lupin",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.milk",
+   "fieldname": "milk",
+   "fieldtype": "Select",
+   "label": "Milk",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.molluscs",
+   "fieldname": "molluscs",
+   "fieldtype": "Select",
+   "label": "Molluscs",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.mustard",
+   "fieldname": "mustard",
+   "fieldtype": "Select",
+   "label": "Mustard",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.peanut",
+   "fieldname": "peanut",
+   "fieldtype": "Select",
+   "label": "Peanut",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.sesame",
+   "fieldname": "sesame",
+   "fieldtype": "Select",
+   "label": "Sesame",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.soya",
+   "fieldname": "soya",
+   "fieldtype": "Select",
+   "label": "Soya",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.sulphur_dioxide",
+   "fieldname": "sulphur_dioxide",
+   "fieldtype": "Select",
+   "label": "Sulphur Dioxide",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.tree_nuts",
+   "fieldname": "tree_nuts",
+   "fieldtype": "Select",
+   "label": "Tree Nuts",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "raw_material.wheat",
+   "fieldname": "wheat",
+   "fieldtype": "Select",
+   "label": "Wheat",
+   "options": "\nContain\nMay Contain\nDoes Not Contain",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-12 17:07:48.699646",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Recipe Items",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

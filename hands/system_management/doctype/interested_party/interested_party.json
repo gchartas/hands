@@ -15,7 +15,8 @@
   "department",
   "department_impact",
   "site",
-  "section_break_10"
+  "section_break_10",
+  "risk_table"
  ],
  "fields": [
   {
@@ -72,12 +73,14 @@
   },
   {
    "fieldname": "site",
-   "fieldtype": "Data",
-   "label": "Site"
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Site"
   },
   {
    "fieldname": "section_break_10",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Risks and Opportunities"
   },
   {
    "default": "IP-",
@@ -88,9 +91,15 @@
    "options": "IP-",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "risk_table",
+   "fieldtype": "Table",
+   "label": "Risk Table",
+   "options": "Risk and Opportunity"
   }
  ],
- "modified": "2020-05-08 21:14:47.518646",
+ "modified": "2020-05-11 20:40:08.823613",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Interested Party",

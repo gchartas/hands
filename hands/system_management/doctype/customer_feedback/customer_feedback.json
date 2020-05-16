@@ -1,0 +1,139 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-15 14:52:04.556092",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "document_type",
+  "template",
+  "cb_00",
+  "document_name",
+  "date",
+  "sb_00",
+  "parameters",
+  "section_break_9",
+  "score",
+  "column_break_11",
+  "grade"
+ ],
+ "fields": [
+  {
+   "default": "Customer",
+   "fieldname": "document_type",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Type",
+   "options": "\nUser\nCustomer\nEmployee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Link",
+   "label": "Template",
+   "options": "Customer Feedback Template",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cb_00",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "document_name",
+   "fieldtype": "Dynamic Link",
+   "label": "Name",
+   "options": "document_type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "sb_00",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "template.feedback_values",
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Parameters",
+   "options": "Customer Feedback Parameter"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "score",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Score (%)",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "grade",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Grade",
+   "options": "\nD\nC\nB\nA\nA+",
+   "read_only": 1
+  },
+  {
+   "default": "CFR-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "CFR-",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-05-15 17:42:30.396603",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Customer Feedback",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "document_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "document_name",
+ "track_changes": 1
+}

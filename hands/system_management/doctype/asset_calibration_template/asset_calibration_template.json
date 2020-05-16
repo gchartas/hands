@@ -1,0 +1,57 @@
+{
+ "autoname": "format:TMPL-{template}",
+ "creation": "2020-05-15 19:35:19.482482",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "template",
+  "column_break_2",
+  "section_break_3",
+  "parameters"
+ ],
+ "fields": [
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Asset Calibration Template Parameter",
+   "options": "Asset Calibration Template Parameter"
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Data",
+   "label": "Name"
+  }
+ ],
+ "modified": "2020-05-15 20:01:08.113313",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Asset Calibration Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

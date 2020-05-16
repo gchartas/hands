@@ -1,0 +1,50 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-12 14:38:36.614854",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "corrective_action"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Title",
+   "options": "CA-"
+  },
+  {
+   "fieldname": "corrective_action",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action"
+  }
+ ],
+ "modified": "2020-05-12 14:48:52.629464",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Corrective Actions",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "corrective_action",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "corrective_action",
+ "track_changes": 1
+}

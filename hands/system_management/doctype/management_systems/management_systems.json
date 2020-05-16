@@ -2,7 +2,7 @@
  "autoname": "field:management_system",
  "creation": "2020-05-08 20:10:34.734860",
  "doctype": "DocType",
- "document_type": "Setup",
+ "document_type": "Document",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
@@ -20,7 +20,7 @@
    "unique": 1
   }
  ],
- "modified": "2020-05-08 20:58:14.850995",
+ "modified": "2020-05-14 09:43:15.636780",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Management Systems",
@@ -64,7 +64,8 @@
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_field": "management_system",
+ "sort_order": "ASC",
+ "title_field": "management_system",
  "track_changes": 1
 }

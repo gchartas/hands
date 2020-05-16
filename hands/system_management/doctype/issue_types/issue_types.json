@@ -31,7 +31,7 @@
    "unique": 1
   }
  ],
- "modified": "2020-05-08 21:19:27.159328",
+ "modified": "2020-05-11 19:35:24.396802",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Issue Types",
@@ -75,8 +75,8 @@
   }
  ],
  "quick_entry": 1,
- "sort_field": "modified",
- "sort_order": "DESC",
+ "sort_field": "issue_type",
+ "sort_order": "ASC",
  "title_field": "issue_type",
  "track_changes": 1
 }

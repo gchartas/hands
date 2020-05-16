@@ -1,0 +1,43 @@
+{
+ "creation": "2020-05-15 18:04:13.295701",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "step",
+  "responsibility",
+  "associated_data"
+ ],
+ "fields": [
+  {
+   "fieldname": "step",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Step"
+  },
+  {
+   "fieldname": "responsibility",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsibility",
+   "options": "Designation"
+  },
+  {
+   "fieldname": "associated_data",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Associated Data/Resources Required"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-15 18:04:26.495106",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Process Procedure Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

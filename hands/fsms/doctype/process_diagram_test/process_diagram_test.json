@@ -1,0 +1,72 @@
+{
+ "autoname": "format:{stage_no} - {stage}",
+ "creation": "2020-05-12 14:54:37.635635",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "stage_no",
+  "stage",
+  "stage_control",
+  "ccp_status"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "stage",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Stage",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "stage_control",
+   "fieldtype": "Data",
+   "label": "Stage Control"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "stage_no",
+   "fieldtype": "Data",
+   "label": "Stage No",
+   "precision": "1",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "default": "0",
+   "fieldname": "ccp_status",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is CCP"
+  }
+ ],
+ "modified": "2020-05-12 15:11:46.831670",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Process Diagram Test",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "stage, ccp_status",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "stage",
+ "track_changes": 1
+}

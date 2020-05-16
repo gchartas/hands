@@ -1,0 +1,85 @@
+{
+ "creation": "2020-05-13 19:15:18.493539",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "competence_type",
+  "description",
+  "current_description",
+  "column_break_4",
+  "ideal_value",
+  "current_value",
+  "remarks",
+  "weight"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "competence_type",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Competence Type",
+   "options": "\nEducation\nExperience\nFunctional\nOperational\nTechnical",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "read_only": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "current_description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Current Description"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ideal_value",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Ideal Value",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "current_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Current Value"
+  },
+  {
+   "columns": 2,
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Float",
+   "label": "Weight",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-13 19:59:09.974112",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Competence Evaluation Details",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

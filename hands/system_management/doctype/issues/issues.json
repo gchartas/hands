@@ -13,7 +13,8 @@
   "reason",
   "site",
   "type",
-  "section_break_9"
+  "section_break_9",
+  "risk_table"
  ],
  "fields": [
   {
@@ -52,13 +53,14 @@
   },
   {
    "fieldname": "reason",
-   "fieldtype": "Small Text",
+   "fieldtype": "Data",
    "label": "How it affects Your Organization"
   },
   {
    "fieldname": "site",
-   "fieldtype": "Data",
-   "label": "Site"
+   "fieldtype": "Link",
+   "label": "Site",
+   "options": "Site"
   },
   {
    "fieldname": "type",
@@ -69,10 +71,17 @@
   },
   {
    "fieldname": "section_break_9",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "label": "Risks and Opportunities"
+  },
+  {
+   "fieldname": "risk_table",
+   "fieldtype": "Table",
+   "label": "Risk Table",
+   "options": "Risk and Opportunity"
   }
  ],
- "modified": "2020-05-08 21:38:13.792342",
+ "modified": "2020-05-11 21:13:14.002380",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Issues",

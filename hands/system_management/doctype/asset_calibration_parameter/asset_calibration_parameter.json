@@ -1,0 +1,96 @@
+{
+ "creation": "2020-05-15 19:42:22.907454",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "uom",
+  "value_1",
+  "value_2",
+  "value_3",
+  "ideal_value",
+  "tolerance",
+  "status"
+ ],
+ "fields": [
+  {
+   "columns": 2,
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "value_1",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value 1",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "value_2",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value 2",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "value_3",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Value 3",
+   "precision": "2"
+  },
+  {
+   "columns": 1,
+   "fieldname": "ideal_value",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Ideal Value",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "tolerance",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tolerance",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "\nPass\nFail",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-15 22:06:06.396360",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Asset Calibration Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

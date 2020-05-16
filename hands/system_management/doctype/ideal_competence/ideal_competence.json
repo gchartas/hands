@@ -1,0 +1,79 @@
+{
+ "autoname": "field:designation",
+ "creation": "2020-05-13 19:02:57.553761",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "designation",
+  "section_break_3",
+  "ideal_comp_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "designation",
+   "fieldtype": "Link",
+   "label": "Designation",
+   "options": "Designation",
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ideal_comp_details",
+   "fieldtype": "Table",
+   "label": "Ideal Competence Details",
+   "options": "Ideal Competence Details"
+  }
+ ],
+ "modified": "2020-05-13 19:25:12.926908",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Ideal Competence",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "ISO Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "designation",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "designation",
+ "track_changes": 1
+}

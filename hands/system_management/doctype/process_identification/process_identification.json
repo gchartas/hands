@@ -1,0 +1,174 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-15 18:20:38.905565",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "ms",
+  "column_break_3",
+  "department",
+  "section_break_5",
+  "process_name",
+  "purpose",
+  "column_break_8",
+  "scope",
+  "definition",
+  "section_break_11",
+  "rev",
+  "column_break_13",
+  "publish_date",
+  "pi_sb",
+  "process_inputs",
+  "procedures_section",
+  "procedure_table",
+  "process_output_section",
+  "process_output_table",
+  "section_break_21",
+  "risk_table"
+ ],
+ "fields": [
+  {
+   "fieldname": "ms",
+   "fieldtype": "Link",
+   "label": "Management System",
+   "options": "Management Systems"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "process_name",
+   "fieldtype": "Data",
+   "label": "Process Name"
+  },
+  {
+   "fieldname": "purpose",
+   "fieldtype": "Small Text",
+   "label": "Purpose"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "scope",
+   "fieldtype": "Small Text",
+   "label": "Scope"
+  },
+  {
+   "fieldname": "definition",
+   "fieldtype": "Small Text",
+   "label": "Definition"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Rev"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date"
+  },
+  {
+   "fieldname": "pi_sb",
+   "fieldtype": "Section Break",
+   "label": "Process Inputs"
+  },
+  {
+   "fieldname": "process_inputs",
+   "fieldtype": "Table",
+   "label": "Process Inputs",
+   "options": "Process Input Table"
+  },
+  {
+   "fieldname": "procedures_section",
+   "fieldtype": "Section Break",
+   "label": "Procedures"
+  },
+  {
+   "fieldname": "procedure_table",
+   "fieldtype": "Table",
+   "label": "Procedure Table",
+   "options": "Process Procedure Table"
+  },
+  {
+   "fieldname": "process_output_section",
+   "fieldtype": "Section Break",
+   "label": "Process Output"
+  },
+  {
+   "fieldname": "process_output_table",
+   "fieldtype": "Table",
+   "label": "Process Output Table",
+   "options": "Process Output Table"
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Section Break",
+   "label": "Risks and Opportunities"
+  },
+  {
+   "fieldname": "risk_table",
+   "fieldtype": "Table",
+   "label": "Risk Table",
+   "options": "Risk and Opportunity"
+  },
+  {
+   "default": "PI-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "PI-",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "modified": "2020-05-15 18:28:31.126719",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Process Identification",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "process_name",
+ "track_changes": 1
+}
