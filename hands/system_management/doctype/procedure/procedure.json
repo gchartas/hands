@@ -34,6 +34,7 @@
    "fieldtype": "Data",
    "label": "Document Refence",
    "set_only_once": 1,
+   "translatable": 1,
    "unique": 1
   },
   {
@@ -108,7 +109,8 @@
   {
    "fieldname": "procedure",
    "fieldtype": "Text Editor",
-   "label": "Procedure"
+   "label": "Procedure",
+   "translatable": 1
   },
   {
    "collapsible": 1,
@@ -158,7 +160,7 @@
    "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-05-10 11:49:00.790854",
+ "modified": "2020-05-24 17:15:05.349858",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Procedure",
@@ -186,17 +188,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }

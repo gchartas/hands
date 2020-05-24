@@ -1,0 +1,92 @@
+{
+ "creation": "2020-05-24 13:01:31.634818",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "before_use",
+  "after_use",
+  "parameter_check",
+  "parameter_check_2",
+  "other",
+  "item_cleaning",
+  "item_disinfection",
+  "method"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter Name",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "parameter_check",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Daily"
+  },
+  {
+   "default": "0",
+   "fieldname": "parameter_check_2",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Weekly"
+  },
+  {
+   "fieldname": "item_cleaning",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Cleaning",
+   "options": "FSMS Chemicals"
+  },
+  {
+   "fieldname": "item_disinfection",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Disinfection",
+   "options": "FSMS Chemicals"
+  },
+  {
+   "default": "0",
+   "fieldname": "before_use",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Before Use"
+  },
+  {
+   "default": "0",
+   "fieldname": "after_use",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "After Use"
+  },
+  {
+   "fieldname": "other",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Other"
+  },
+  {
+   "fieldname": "method",
+   "fieldtype": "Small Text",
+   "label": "Method"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-24 13:07:40.833453",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Cleaning Control Template Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

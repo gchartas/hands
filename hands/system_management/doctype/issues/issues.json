@@ -54,7 +54,8 @@
   {
    "fieldname": "reason",
    "fieldtype": "Data",
-   "label": "How it affects Your Organization"
+   "label": "How it affects Your Organization",
+   "translatable": 1
   },
   {
    "fieldname": "site",
@@ -81,7 +82,7 @@
    "options": "Risk and Opportunity"
   }
  ],
- "modified": "2020-05-11 21:13:14.002380",
+ "modified": "2020-05-24 09:33:50.868519",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Issues",
@@ -109,17 +110,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }

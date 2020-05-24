@@ -28,7 +28,7 @@
    "options": "Ideal Competence Details"
   }
  ],
- "modified": "2020-05-13 19:25:12.926908",
+ "modified": "2020-05-24 09:33:47.654604",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Ideal Competence",
@@ -56,17 +56,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }

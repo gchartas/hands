@@ -60,7 +60,8 @@
    "fieldname": "nc_details",
    "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Non Conformity Details"
+   "label": "Non Conformity Details",
+   "translatable": 1
   },
   {
    "fieldname": "nc_pr",
@@ -77,35 +78,41 @@
   {
    "fieldname": "nc_process",
    "fieldtype": "Data",
-   "label": "Process"
+   "label": "Process",
+   "translatable": 1
   },
   {
    "fieldname": "nc_product",
    "fieldtype": "Data",
-   "label": "Product"
+   "label": "Product",
+   "translatable": 1
   },
   {
    "fieldname": "nc_location",
    "fieldtype": "Data",
-   "label": "Location"
+   "label": "Location",
+   "translatable": 1
   },
   {
    "fieldname": "nc_source",
    "fieldtype": "Data",
-   "label": "Source"
+   "label": "Source",
+   "translatable": 1
   },
   {
    "fieldname": "nc_site",
    "fieldtype": "Data",
-   "label": "Site"
+   "label": "Site",
+   "translatable": 1
   },
   {
    "fieldname": "nc_criticality",
    "fieldtype": "Data",
-   "label": "Non Conformity Criticality"
+   "label": "Non Conformity Criticality",
+   "translatable": 1
   }
  ],
- "modified": "2020-05-15 13:40:34.432389",
+ "modified": "2020-05-21 13:24:58.254915",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Complaints",

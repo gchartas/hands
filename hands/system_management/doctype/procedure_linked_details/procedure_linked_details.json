@@ -21,11 +21,12 @@
    "in_list_view": 1,
    "label": "Procedure Title",
    "options": "proc_ref.title",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-10 11:51:00.376768",
+ "modified": "2020-05-21 13:35:29.307072",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Procedure Linked Details",

@@ -18,9 +18,34 @@
   "risk_impact",
   "risk_rate",
   "column_break_13",
+  "treatment",
   "proposed_review_date",
   "actions_proposed",
   "proposed_completion_date",
+  "opportunity_section",
+  "is_it_an_opportunity",
+  "opportunity_details",
+  "opportunity_completion_date",
+  "column_break_23",
+  "opportunity_actions_proposed",
+  "risk_analysis_section",
+  "propability_column",
+  "likelihood",
+  "previous_occurances",
+  "propability_rate",
+  "column_break_29",
+  "loss",
+  "inability",
+  "health",
+  "regulations",
+  "reputation",
+  "penalty",
+  "impact_rate",
+  "column_break_30",
+  "detectability",
+  "detectability_rate",
+  "risk_calculations",
+  "risk_factor",
   "amended_from"
  ],
  "fields": [
@@ -138,10 +163,163 @@
    "options": "Risk and Opportunity",
    "print_hide": 1,
    "read_only": 1
+  },
+  {
+   "fieldname": "treatment",
+   "fieldtype": "Select",
+   "label": "Treatment Type",
+   "options": "\nElimination\nReduction\nRetention\nTransfer"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "opportunity_section",
+   "fieldtype": "Section Break",
+   "label": "Opportunity"
+  },
+  {
+   "fieldname": "is_it_an_opportunity",
+   "fieldtype": "Select",
+   "in_standard_filter": 1,
+   "label": "Is it an Opportunity",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "opportunity_details",
+   "fieldtype": "Data",
+   "label": "Opportunity Details"
+  },
+  {
+   "fieldname": "opportunity_completion_date",
+   "fieldtype": "Date",
+   "label": "Opportunity Completion Date"
+  },
+  {
+   "fieldname": "opportunity_actions_proposed",
+   "fieldtype": "Small Text",
+   "label": "Opportunity Actions Proposed"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "risk_analysis_section",
+   "fieldtype": "Section Break",
+   "label": "Risk Analysis"
+  },
+  {
+   "fieldname": "likelihood",
+   "fieldtype": "Select",
+   "label": "Likelihood",
+   "options": "\nCannot occur / not applicable\nUnlikely to occur\nSomewhat likely to occur\nLikely to occur\nVery likely to occur",
+   "translatable": 1
+  },
+  {
+   "fieldname": "previous_occurances",
+   "fieldtype": "Select",
+   "label": "Previous Occurances",
+   "options": "\nHas never occurred\nHas not occurred in past 10 years\nHas occurred in past 10 years\nHas occurred in past 5 years\nHas occurred in past year",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break",
+   "label": "Impact"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break",
+   "label": "Detectability"
+  },
+  {
+   "fieldname": "propability_rate",
+   "fieldtype": "Float",
+   "label": "Propability Rate",
+   "precision": "1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "loss",
+   "fieldtype": "Select",
+   "label": "Potential Loss of Customer or Entire Contract",
+   "options": "\nNone / NA\nMinor\nModerate\nHigh\nVery High",
+   "translatable": 1
+  },
+  {
+   "fieldname": "inability",
+   "fieldtype": "Select",
+   "label": "Potential Inability to Meet Requirements of Single Job",
+   "options": "\nNone / NA\nMinor\nModerate\nHigh\nVery High"
+  },
+  {
+   "fieldname": "health",
+   "fieldtype": "Select",
+   "label": "Potential Risk to Human Health",
+   "options": "\nNone / NA\nMinor\nModerate\nHigh\nVery High"
+  },
+  {
+   "fieldname": "regulations",
+   "fieldtype": "Select",
+   "label": "Potential Violation of Regulations",
+   "options": "\nNone / NA\nUnlikely\nPossible\nVery likely\nLegal Risk"
+  },
+  {
+   "fieldname": "reputation",
+   "fieldtype": "Select",
+   "label": "Impact on Company Reputation",
+   "options": "\nNone\nMinimal\nModerate\nSevere\nVery severe"
+  },
+  {
+   "fieldname": "penalty",
+   "fieldtype": "Select",
+   "label": "Est. Cost of Correction / Financial Penalty",
+   "options": "\n\u20ac0 or N/A\nless than \u20ac10.000\nless than \u20ac100.000\nless than \u20ac500.000\nmore than \u20ac500.000",
+   "translatable": 1
+  },
+  {
+   "fieldname": "impact_rate",
+   "fieldtype": "Float",
+   "label": "Impact Rate",
+   "precision": "1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "detectability",
+   "fieldtype": "Select",
+   "label": "Ability to detect the risk",
+   "options": "\nAlways detected / NA\nEasy to detect\nSomewhat easy to detect\nDifficult to detect\nImpossible to detect"
+  },
+  {
+   "fieldname": "detectability_rate",
+   "fieldtype": "Float",
+   "label": "Detectability Rate",
+   "precision": "1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "propability_column",
+   "fieldtype": "Column Break",
+   "label": "Propability"
+  },
+  {
+   "default": "______________",
+   "fieldname": "risk_calculations",
+   "fieldtype": "Data",
+   "label": "Risk Calculations",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fieldname": "risk_factor",
+   "fieldtype": "Float",
+   "label": "Risk Factor",
+   "precision": "1",
+   "read_only": 1
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-12 09:38:25.358819",
+ "modified": "2020-05-24 17:15:06.549014",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Risk and Opportunity",
@@ -169,17 +347,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }

@@ -25,5 +25,12 @@ def get_data():
 	        "icon": "fa fa-cutlery",
 	        "type": "module",
 	        "label": _("HACCP")
+	    },
+	    {
+	        "module_name": "Water Safety",
+	        "color": "grey",
+	        "icon": "octicon octicon-git-branch",
+	        "type": "module",
+	        "label": _("Water Management")
 	    }
 	    ]

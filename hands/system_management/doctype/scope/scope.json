@@ -37,12 +37,14 @@
    "fieldname": "exclusion",
    "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Exclusion"
+   "label": "Exclusion",
+   "translatable": 1
   },
   {
    "fieldname": "site",
    "fieldtype": "Data",
-   "label": "Site"
+   "label": "Site",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_5",
@@ -53,17 +55,19 @@
    "fieldname": "scope",
    "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Scope"
+   "label": "Scope",
+   "translatable": 1
   },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "justification",
    "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Justification"
+   "label": "Justification",
+   "translatable": 1
   }
  ],
- "modified": "2020-05-08 23:03:44.809851",
+ "modified": "2020-05-24 17:15:11.420400",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Scope",
@@ -91,18 +95,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }

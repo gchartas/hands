@@ -7,89 +7,25 @@ def get_data():
             "items": [
                 {
                     "type": "doctype",
+                    "name": "Cleaning Control",
+                    "label": "Cleaning Control",
+                },
+                {
+                    "type": "doctype",
                     "name": "Fridge Temp Control",
                 },
                 {
                     "type": "doctype",
-                    "name": "Receiving Goods Test",
+                    "name": "Deep Fryer Oil Change",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Receiving Goods",
                     "label": "Receiving Goods"
                 },
-                {
-                    "type": "doctype",
-                    "name": "Place Check",
-                    "label": "Clean Check",
-                },
-                
             ]
         },
-        {"label": _("Setting Up"),
-            "items": [
-                {
-                    "type": "doctype",
-                    "name": "Raw Material",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Product",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Recipe",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Place Template",
-                    "label": "Clean Check Template",
-                },
-            ]
-        },
-        {"label": _("HR"),
-            "items": [
-                {
-                    "type": "doctype",
-                    "name": "Department",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Designation",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Employee",
-                    "onboard": 1,
-                },
-                {
-                    "type": "doctype",
-                    "name": "Ideal Competence",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Competence Evaluation",
-                    "label": "Competence and Evaluation"
-                },
-            ]
-        },
-        {"label": _("Training"),
-            "items": [
-                {
-                    "type": "doctype",
-                    "name": "Training Program",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Training Event",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Training Result",
-                },
-                {
-                    "type": "doctype",
-                    "name": "Training Feedback",
-                },
-            ]
-        },
-        {"label": _("Purchase"),
+        {"label": _("Items and Purchase"),
             "items": [
                 {
                     "type": "doctype",
@@ -101,23 +37,75 @@ def get_data():
                 },
                 {
                     "type": "doctype",
-                    "name": "Supplier Evaluation",
+                    "name": "Receiving Goods",
+                    "label": "Receiving Goods"
                 },
                 {
                     "type": "doctype",
-                    "name": "Supplier Evaluation Template",
+                    "name": "Raw Material",
                 },
+                {
+                    "type": "doctype",
+                    "name": "FSMS Chemicals",
+                },
+                
             ]
         },
-        {"label": _("Documented Information"),
+        {"label": _("Setting Up"),
             "items": [
                 {
                     "type": "doctype",
-                    "name": "Procedure",
+                    "name": "Cleaning Control Template",
+                    "label": "Cleaning Control Template",
                 },
                 {
                     "type": "doctype",
-                    "name": "Forms",
+                    "name": "Fridge List",
+                    "label": "Fridge",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Deep Fryer",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Product",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Recipe",
+                },
+            ]
+        },
+        {"label": _("FSMS Plan"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "HACCP Process",
+                    "label": "Processes",
+                },
+                {
+                    "type": "doctype",
+                    "name": "HACCP Plan",
+                    "label": "HACCP Plan",
+                },
+                {
+                    "type": "doctype",
+                    "name": "OPRP Plan",
+                },
+            ]
+        },
+        {"label": _("Employee Health Check"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "Employee Daily Check",
+                    "label": "Employee Daily Check",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Employee Daily Check Template",
+                    "label": "Employee Daily Check Template",
                 },
             ]
         },

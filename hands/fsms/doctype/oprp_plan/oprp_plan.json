@@ -1,0 +1,64 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-24 15:10:01.353342",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "name1",
+  "oprp_sb",
+  "oprp_plan"
+ ],
+ "fields": [
+  {
+   "default": "OPRP-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "OPRP-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "oprp_sb",
+   "fieldtype": "Section Break",
+   "label": "OPRP Plan"
+  },
+  {
+   "fieldname": "oprp_plan",
+   "fieldtype": "Table",
+   "label": "OPRP Plan",
+   "options": "OPRP Plan Table"
+  }
+ ],
+ "modified": "2020-05-24 15:10:01.353342",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "OPRP Plan",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

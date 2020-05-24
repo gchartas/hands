@@ -13,23 +13,26 @@
    "fieldname": "input_required",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Input Required"
+   "label": "Input Required",
+   "translatable": 1
   },
   {
    "fieldname": "source_of_input",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Source of Input"
+   "label": "Source of Input",
+   "translatable": 1
   },
   {
    "fieldname": "associated_data",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Associated Data/Resources Required"
+   "label": "Associated Data/Resources Required",
+   "translatable": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-15 18:05:20.258967",
+ "modified": "2020-05-21 13:37:40.578262",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Process Input Table",

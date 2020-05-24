@@ -29,14 +29,16 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Description",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "columns": 2,
    "fieldname": "current_description",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Current Description"
+   "label": "Current Description",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_4",
@@ -48,7 +50,8 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Ideal Value",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "columns": 1,
@@ -62,7 +65,8 @@
    "fieldname": "remarks",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Remarks"
+   "label": "Remarks",
+   "translatable": 1
   },
   {
    "fieldname": "weight",
@@ -72,7 +76,7 @@
   }
  ],
  "istable": 1,
- "modified": "2020-05-13 19:59:09.974112",
+ "modified": "2020-05-21 13:23:28.876376",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Competence Evaluation Details",

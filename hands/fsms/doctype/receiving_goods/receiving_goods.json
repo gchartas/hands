@@ -1,0 +1,326 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-23 18:23:06.067956",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "column_break_3",
+  "employee_name",
+  "section_break_5",
+  "supplier",
+  "purchase_order",
+  "column_break_7",
+  "supplier_name",
+  "column_break_9",
+  "invoice_no",
+  "section_break_11",
+  "now",
+  "column_break_10",
+  "date",
+  "column_break_16",
+  "time",
+  "truck_section",
+  "temp",
+  "column_break_11",
+  "clean",
+  "column_break_13",
+  "pests",
+  "column_break_15",
+  "dump",
+  "secondary_packaging_section",
+  "tear2",
+  "column_break_19",
+  "dump2",
+  "column_break_21",
+  "pest2",
+  "primary_packaging_section",
+  "dump1",
+  "column_break_29",
+  "tear1",
+  "column_break_31",
+  "bloat1",
+  "received_goods_section",
+  "received_goods_details",
+  "signatures_section",
+  "employee_signature",
+  "emp_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "RG-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "RG-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "columns": 2,
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "purchase_order",
+   "fieldtype": "Link",
+   "label": "Purchase Order",
+   "options": "Purchase Order"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "supplier.name",
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "invoice_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Invoice No"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "now",
+   "fieldtype": "Button",
+   "label": "Now"
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "truck_section",
+   "fieldtype": "Section Break",
+   "label": "Truck"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "temp",
+   "fieldtype": "Float",
+   "label": "Temp"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "clean",
+   "fieldtype": "Check",
+   "label": "Clean"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "pests",
+   "fieldtype": "Check",
+   "label": "Lack of Pests"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "dump",
+   "fieldtype": "Check",
+   "label": "Lack of Dump"
+  },
+  {
+   "fieldname": "secondary_packaging_section",
+   "fieldtype": "Section Break",
+   "label": "Secondary Packaging"
+  },
+  {
+   "default": "1",
+   "fieldname": "tear2",
+   "fieldtype": "Check",
+   "label": "Lack of Tear"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "dump2",
+   "fieldtype": "Check",
+   "label": "Lack of Dump"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "pest2",
+   "fieldtype": "Check",
+   "label": "Lack of Pest"
+  },
+  {
+   "fieldname": "primary_packaging_section",
+   "fieldtype": "Section Break",
+   "label": "Primary Packaging"
+  },
+  {
+   "default": "1",
+   "fieldname": "dump1",
+   "fieldtype": "Check",
+   "label": "Lack of Dump"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "tear1",
+   "fieldtype": "Check",
+   "label": "Lack of Tear"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "bloat1",
+   "fieldtype": "Check",
+   "label": "Lack of Bloat"
+  },
+  {
+   "fieldname": "received_goods_section",
+   "fieldtype": "Section Break",
+   "label": "Received Goods"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "received_goods_details",
+   "fieldtype": "Table",
+   "label": "Received Goods Details",
+   "options": "Receiving Goods Table"
+  },
+  {
+   "fieldname": "signatures_section",
+   "fieldtype": "Section Break",
+   "label": "Signatures"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "employee_signature",
+   "fieldtype": "Signature",
+   "label": "Employee Signature"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "emp_name",
+   "fieldtype": "Data",
+   "label": "Emp Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Receiving Goods",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-23 18:23:30.047363",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Receiving Goods",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "supplier",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "supplier",
+ "track_changes": 1
+}

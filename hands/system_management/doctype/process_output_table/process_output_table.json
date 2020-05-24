@@ -13,23 +13,26 @@
    "fieldname": "output_generated",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Output Generated"
+   "label": "Output Generated",
+   "translatable": 1
   },
   {
    "fieldname": "output_used_by",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Output Used By"
+   "label": "Output Used By",
+   "translatable": 1
   },
   {
    "fieldname": "associated_data",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Associated Data/Resources Required"
+   "label": "Associated Data/Resources Required",
+   "translatable": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-15 18:08:32.778437",
+ "modified": "2020-05-21 13:38:04.887216",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Process Output Table",

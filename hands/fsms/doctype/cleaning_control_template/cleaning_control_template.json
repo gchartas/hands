@@ -1,0 +1,70 @@
+{
+ "autoname": "field:description",
+ "creation": "2020-05-24 13:06:29.353481",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "section_break_2",
+  "parameters"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Description",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Parameters",
+   "options": "Cleaning Control Template Parameter"
+  }
+ ],
+ "modified": "2020-05-24 17:14:58.174616",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Cleaning Control Template",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Administrator",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "description",
+ "sort_order": "ASC",
+ "title_field": "description",
+ "track_changes": 1
+}

@@ -7,6 +7,10 @@
  "field_order": [
   "item",
   "item_name",
+  "storage_characteristics_section",
+  "temp_status",
+  "column_break_5",
+  "temp",
   "allergens_section",
   "peanut",
   "tree_nuts",
@@ -40,6 +44,7 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Item Name",
+   "translatable": 1,
    "unique": 1
   },
   {
@@ -146,9 +151,31 @@
   {
    "fieldname": "column_break_18",
    "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "storage_characteristics_section",
+   "fieldtype": "Section Break",
+   "label": "Storage Characteristics"
+  },
+  {
+   "fieldname": "temp_status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "\nFrozen\nCooled\nDry Storage"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "temp",
+   "fieldtype": "Float",
+   "label": "Temperature",
+   "precision": "1"
   }
  ],
- "modified": "2020-05-12 17:06:45.081795",
+ "modified": "2020-05-23 12:12:22.354635",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Raw Material",

@@ -17,28 +17,32 @@
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Site Name",
-   "reqd": 1
+   "reqd": 1,
+   "translatable": 1
   },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "address",
    "fieldtype": "Data",
-   "label": "Address"
+   "label": "Address",
+   "translatable": 1
   },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "facilities",
    "fieldtype": "Small Text",
-   "label": "Facilities"
+   "label": "Facilities",
+   "translatable": 1
   },
   {
    "allow_in_quick_entry": 1,
    "fieldname": "operations",
    "fieldtype": "Small Text",
-   "label": "Operations"
+   "label": "Operations",
+   "translatable": 1
   }
  ],
- "modified": "2020-05-11 20:09:55.163760",
+ "modified": "2020-05-21 13:41:59.173453",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Site",

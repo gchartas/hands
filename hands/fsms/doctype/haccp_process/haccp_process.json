@@ -1,0 +1,205 @@
+{
+ "autoname": "field:haccp_process_name",
+ "creation": "2020-05-24 10:09:36.132401",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "haccp_process_name",
+  "parent_haccp_process",
+  "old_parent",
+  "is_group",
+  "lft",
+  "rgt",
+  "responsible",
+  "workstation",
+  "haccp_section",
+  "hazard_type",
+  "control_measures",
+  "monitoring_system",
+  "records",
+  "column_break_10",
+  "control_parameter",
+  "critical_limit",
+  "corrective_actions",
+  "oprp_section",
+  "oprp_hazard_type",
+  "preventive_measures",
+  "section_break_21",
+  "monitoring",
+  "oprp_corrective_actions",
+  "procedures_and_directives"
+ ],
+ "fields": [
+  {
+   "fieldname": "haccp_process_name",
+   "fieldtype": "Data",
+   "label": "HACCP Process",
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "parent_haccp_process",
+   "fieldtype": "Link",
+   "label": "Parent Haccp Process",
+   "options": "HACCP Process"
+  },
+  {
+   "fieldname": "old_parent",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Old Parent",
+   "options": "HACCP Process",
+   "read_only": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "is_group",
+   "fieldtype": "Check",
+   "label": "Is Group"
+  },
+  {
+   "fieldname": "lft",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "lft",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rgt",
+   "fieldtype": "Int",
+   "hidden": 1,
+   "label": "rgt",
+   "read_only": 1
+  },
+  {
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "label": "Workstation",
+   "options": "Workstation"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "haccp_section",
+   "fieldtype": "Section Break",
+   "label": "HACCP"
+  },
+  {
+   "fieldname": "hazard_type",
+   "fieldtype": "Small Text",
+   "label": "Hazard Type",
+   "translatable": 1
+  },
+  {
+   "fieldname": "control_measures",
+   "fieldtype": "Small Text",
+   "label": "Control Measures",
+   "translatable": 1
+  },
+  {
+   "fieldname": "control_parameter",
+   "fieldtype": "Small Text",
+   "label": "Control Parameter",
+   "translatable": 1
+  },
+  {
+   "fieldname": "critical_limit",
+   "fieldtype": "Small Text",
+   "label": "Critical Limit",
+   "translatable": 1
+  },
+  {
+   "fieldname": "monitoring_system",
+   "fieldtype": "Small Text",
+   "label": "Monitoring System",
+   "translatable": 1
+  },
+  {
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "label": "Responsible",
+   "options": "Role"
+  },
+  {
+   "fieldname": "corrective_actions",
+   "fieldtype": "Small Text",
+   "label": "Corrective Actions",
+   "translatable": 1
+  },
+  {
+   "fieldname": "records",
+   "fieldtype": "Small Text",
+   "label": "Records",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_10",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "oprp_section",
+   "fieldtype": "Section Break",
+   "label": "OPRP"
+  },
+  {
+   "fieldname": "oprp_hazard_type",
+   "fieldtype": "Small Text",
+   "label": "OPRP Hazard Type ",
+   "translatable": 1
+  },
+  {
+   "fieldname": "preventive_measures",
+   "fieldtype": "Small Text",
+   "label": "Preventive Measures",
+   "translatable": 1
+  },
+  {
+   "fieldname": "section_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "monitoring",
+   "fieldtype": "Small Text",
+   "label": "Monitoring",
+   "translatable": 1
+  },
+  {
+   "fieldname": "oprp_corrective_actions",
+   "fieldtype": "Small Text",
+   "label": "OPRP Corrective Actions",
+   "translatable": 1
+  },
+  {
+   "fieldname": "procedures_and_directives",
+   "fieldtype": "Small Text",
+   "label": "Procedures and Directives",
+   "translatable": 1
+  }
+ ],
+ "is_tree": 1,
+ "modified": "2020-05-24 11:09:11.916730",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "HACCP Process",
+ "name_case": "Title Case",
+ "nsm_parent_field": "parent_haccp_process",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

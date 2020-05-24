@@ -1,0 +1,111 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-23 20:40:38.038532",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "title",
+  "section_break_3",
+  "issue",
+  "column_break_5",
+  "expire",
+  "column_break_7",
+  "attach",
+  "section_break_9",
+  "remarks",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "EDR-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Name",
+   "options": "EDR-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "issue",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Issue"
+  },
+  {
+   "fieldname": "expire",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Expiration"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "External Documents",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-23 20:46:37.507994",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "External Documents",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "title,issue,expire",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "title",
+ "track_changes": 1
+}

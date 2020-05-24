@@ -1,0 +1,115 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-23 19:17:28.219827",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "management_system",
+  "column_break_2",
+  "department",
+  "section_break_3",
+  "objective",
+  "column_break_5",
+  "objective_start_date",
+  "column_break_7",
+  "objective_end_date",
+  "section_break_9",
+  "objectives"
+ ],
+ "fields": [
+  {
+   "fieldname": "management_system",
+   "fieldtype": "Link",
+   "label": "Management System",
+   "options": "Management Systems"
+  },
+  {
+   "fieldname": "objective",
+   "fieldtype": "Data",
+   "label": "Objective"
+  },
+  {
+   "columns": 1,
+   "fieldname": "objective_start_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Objective Start Date"
+  },
+  {
+   "columns": 1,
+   "fieldname": "objective_end_date",
+   "fieldtype": "Date",
+   "label": "Objective End Date"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Link",
+   "label": "Department",
+   "options": "Department"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "OR-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "OR-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "objectives",
+   "fieldtype": "Table",
+   "label": "Objectives",
+   "options": "Objective Table"
+  }
+ ],
+ "modified": "2020-05-23 19:40:11.496655",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Objective",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "objective",
+ "track_changes": 1
+}

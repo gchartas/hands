@@ -1,0 +1,433 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-20 11:23:00.378577",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "pool",
+  "column_break_3",
+  "pool_name",
+  "section_break_5",
+  "pool_total_volume",
+  "column_break_7",
+  "pool_ph",
+  "column_break_9",
+  "pool_free_chlorine",
+  "section_break_11",
+  "now",
+  "column_break_13",
+  "date",
+  "column_break_15",
+  "time",
+  "log_section",
+  "turbidity",
+  "column_break_19",
+  "ph",
+  "column_break_21",
+  "free_chlorine",
+  "column_break_23",
+  "temp",
+  "chemicals_section",
+  "add_chlorine",
+  "column_break_27",
+  "chlorine",
+  "column_break_29",
+  "concentration",
+  "column_break_31",
+  "chlor_addition",
+  "ph_minus_column",
+  "add_ph_minus",
+  "column_break_35",
+  "acid",
+  "column_break_37",
+  "coefficient_ph_minus",
+  "column_break_39",
+  "ph_minus_addition",
+  "ph_plus_column",
+  "add_ph_plus",
+  "column_break_43",
+  "base",
+  "column_break_45",
+  "coefficient_ph_plus",
+  "column_break_47",
+  "ph_plus_addition",
+  "algecide_column",
+  "add_algecide",
+  "column_break_51",
+  "algecide",
+  "column_break_53",
+  "coefficient_algecide",
+  "column_break_55",
+  "algecide_addition",
+  "flocculation_column",
+  "add_flocculant",
+  "floculant",
+  "column_break_60",
+  "coefficient_flocculant",
+  "column_break_62",
+  "flocculant_addition"
+ ],
+ "fields": [
+  {
+   "default": "Pool-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "Pool-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "pool",
+   "fieldtype": "Link",
+   "label": "Pool",
+   "options": "Pool"
+  },
+  {
+   "fetch_from": "pool.total_volume",
+   "fieldname": "pool_total_volume",
+   "fieldtype": "Float",
+   "label": "Pool Total Volume",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pool.pool_name",
+   "fieldname": "pool_name",
+   "fieldtype": "Data",
+   "label": "Pool Name",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pool.ideal_ph",
+   "fieldname": "pool_ph",
+   "fieldtype": "Float",
+   "label": "Ideal pH",
+   "precision": "1",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pool.ideal_chlorine",
+   "fieldname": "pool_free_chlorine",
+   "fieldtype": "Float",
+   "label": "Ideal Free Cholrine",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "now",
+   "fieldtype": "Button",
+   "label": "Now"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time",
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "chemicals_section",
+   "fieldtype": "Section Break",
+   "label": "Chorination Addition"
+  },
+  {
+   "columns": 1,
+   "fieldname": "chlorine",
+   "fieldtype": "Link",
+   "label": "Chlorine",
+   "options": "Chemicals"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "ph_minus_column",
+   "fieldtype": "Section Break",
+   "label": "pH Minus"
+  },
+  {
+   "columns": 1,
+   "fieldname": "acid",
+   "fieldtype": "Link",
+   "label": "acid",
+   "options": "Chemicals"
+  },
+  {
+   "collapsible": 1,
+   "columns": 1,
+   "fieldname": "ph_plus_column",
+   "fieldtype": "Section Break",
+   "label": "pH Plus"
+  },
+  {
+   "columns": 1,
+   "fieldname": "base",
+   "fieldtype": "Link",
+   "label": "base",
+   "options": "Chemicals"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "algecide_column",
+   "fieldtype": "Section Break",
+   "label": "Algecide"
+  },
+  {
+   "columns": 1,
+   "fieldname": "algecide",
+   "fieldtype": "Link",
+   "label": "Algecide",
+   "options": "Chemicals"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "flocculation_column",
+   "fieldtype": "Section Break",
+   "hidden": 1,
+   "label": "Flocculation"
+  },
+  {
+   "columns": 1,
+   "fieldname": "floculant",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Flocculant",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "log_section",
+   "fieldtype": "Section Break",
+   "label": "Log"
+  },
+  {
+   "fieldname": "ph",
+   "fieldtype": "Float",
+   "label": "pH",
+   "precision": "1"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "chlorine.new_concetration",
+   "fieldname": "concentration",
+   "fieldtype": "Float",
+   "label": "Concentration",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "turbidity",
+   "fieldtype": "Select",
+   "label": "Turbidity",
+   "options": "\nClear\nAlmost Clear\nBlurred"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "free_chlorine",
+   "fieldtype": "Float",
+   "label": "Free Chlorine",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "temp",
+   "fieldtype": "Float",
+   "label": "Temp",
+   "precision": "1"
+  },
+  {
+   "fieldname": "add_chlorine",
+   "fieldtype": "Button",
+   "label": "Add Chlorine"
+  },
+  {
+   "columns": 1,
+   "fieldname": "chlor_addition",
+   "fieldtype": "Float",
+   "label": "Addition"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_29",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_31",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "add_ph_minus",
+   "fieldtype": "Button",
+   "label": "Add pH Minus"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coefficient_ph_minus",
+   "fieldtype": "Float",
+   "label": "Coefficient pH minus"
+  },
+  {
+   "fieldname": "column_break_39",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ph_minus_addition",
+   "fieldtype": "Float",
+   "label": "pH minus Addition"
+  },
+  {
+   "fieldname": "add_ph_plus",
+   "fieldtype": "Button",
+   "label": "Add pH Plus"
+  },
+  {
+   "fieldname": "column_break_43",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_45",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coefficient_ph_plus",
+   "fieldtype": "Float",
+   "label": "Coefficient pH Plus"
+  },
+  {
+   "fieldname": "column_break_47",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ph_plus_addition",
+   "fieldtype": "Float",
+   "label": "pH plus Addition"
+  },
+  {
+   "fieldname": "add_algecide",
+   "fieldtype": "Button",
+   "label": "Add Algecide"
+  },
+  {
+   "fieldname": "column_break_51",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_53",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coefficient_algecide",
+   "fieldtype": "Float",
+   "label": "Coefficient Algecide"
+  },
+  {
+   "fieldname": "column_break_55",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "algecide_addition",
+   "fieldtype": "Float",
+   "label": "Algecide Addition"
+  },
+  {
+   "fieldname": "add_flocculant",
+   "fieldtype": "Button",
+   "label": "Add Flocculant"
+  },
+  {
+   "fieldname": "column_break_60",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "coefficient_flocculant",
+   "fieldtype": "Float",
+   "label": "Coefficient Flocculant"
+  },
+  {
+   "fieldname": "column_break_62",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "flocculant_addition",
+   "fieldtype": "Float",
+   "label": "Flocculant Addition"
+  }
+ ],
+ "modified": "2020-05-23 10:54:29.697802",
+ "modified_by": "Administrator",
+ "module": "Water Safety",
+ "name": "Pool Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

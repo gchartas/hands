@@ -1,0 +1,113 @@
+{
+ "creation": "2020-05-24 10:50:04.725929",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "haccp_process",
+  "workstation",
+  "hazard_type",
+  "control_measures",
+  "control_parameter",
+  "critical_limit",
+  "monitoring_system",
+  "responsible",
+  "corrective_actions",
+  "records"
+ ],
+ "fields": [
+  {
+   "fieldname": "haccp_process",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "HACCP Process",
+   "options": "HACCP Process"
+  },
+  {
+   "fetch_from": "haccp_process.workstation",
+   "fieldname": "workstation",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Workstation",
+   "options": "Workstation",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.hazard_type",
+   "fieldname": "hazard_type",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Hazard Type",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.control_measures",
+   "fieldname": "control_measures",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Control Measures",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.monitoring_system",
+   "fieldname": "monitoring_system",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Monitoring System",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.records",
+   "fieldname": "records",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Records",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.control_parameter",
+   "fieldname": "control_parameter",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Control Parameter",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.critical_limit",
+   "fieldname": "critical_limit",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Critical Limit",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.corrective_actions",
+   "fieldname": "corrective_actions",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Corrective Actions",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.responsible",
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsible",
+   "options": "Role",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-24 11:10:47.942057",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "HACCP Plan Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

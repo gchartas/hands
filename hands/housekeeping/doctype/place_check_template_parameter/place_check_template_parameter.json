@@ -1,0 +1,69 @@
+{
+ "creation": "2020-05-23 11:39:36.522019",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "parameter_check",
+  "parameter_check_2",
+  "parameter_check_3",
+  "item_cleaning",
+  "item_disinfection"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter Name",
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "parameter_check",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Daily"
+  },
+  {
+   "default": "0",
+   "fieldname": "parameter_check_2",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Weekly"
+  },
+  {
+   "default": "0",
+   "fieldname": "parameter_check_3",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Is Monthly"
+  },
+  {
+   "fieldname": "item_cleaning",
+   "fieldtype": "Link",
+   "label": "Item Cleaning",
+   "options": "FSMS Chemicals"
+  },
+  {
+   "fieldname": "item_disinfection",
+   "fieldtype": "Link",
+   "label": "Item Disinfection",
+   "options": "FSMS Chemicals"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-24 12:58:31.972732",
+ "modified_by": "Administrator",
+ "module": "Housekeeping",
+ "name": "Place Check Template Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

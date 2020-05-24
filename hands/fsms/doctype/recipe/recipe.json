@@ -59,7 +59,8 @@
   {
    "fieldname": "qty",
    "fieldtype": "Data",
-   "label": "Qty"
+   "label": "Qty",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_5",
@@ -213,7 +214,7 @@
    "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-05-12 18:52:27.636469",
+ "modified": "2020-05-23 10:51:44.194621",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Recipe",

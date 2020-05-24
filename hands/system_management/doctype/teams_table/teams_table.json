@@ -1,0 +1,75 @@
+{
+ "creation": "2020-05-23 19:05:58.815520",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "employee",
+  "employee_name",
+  "team_position",
+  "team_position_title",
+  "deputy",
+  "deputy_name"
+ ],
+ "fields": [
+  {
+   "columns": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "columns": 3,
+   "fieldname": "team_position",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Team Position"
+  },
+  {
+   "columns": 2,
+   "fieldname": "team_position_title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Team Position Title"
+  },
+  {
+   "columns": 1,
+   "fieldname": "deputy",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Deputy",
+   "options": "Employee"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "deputy.employee_name",
+   "fieldname": "deputy_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Deputy Name",
+   "read_only": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-23 19:07:00.766502",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Teams Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

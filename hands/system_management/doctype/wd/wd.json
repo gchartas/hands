@@ -1,0 +1,174 @@
+{
+ "autoname": "field:ref_no",
+ "creation": "2020-05-24 12:18:25.983592",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "title",
+  "section_break_2",
+  "ref_no",
+  "column_break_4",
+  "rev",
+  "column_break_6",
+  "publish_date",
+  "column_break_8",
+  "next_review_date",
+  "section_break_10",
+  "rev_table",
+  "relevant_forms_section",
+  "relevant_forms_table",
+  "linked_procedures_section",
+  "procedure_linked_table",
+  "linked_work_directives_section",
+  "work_directive_section",
+  "work_directive_description",
+  "details_section",
+  "company",
+  "author",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Document Reference",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Revision",
+   "precision": "1"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date"
+  },
+  {
+   "fieldname": "section_break_10",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "rev_table",
+   "fieldtype": "Table",
+   "label": "Revision Table",
+   "options": "Procedure Revision History"
+  },
+  {
+   "fieldname": "relevant_forms_section",
+   "fieldtype": "Section Break",
+   "label": "Relevant Forms"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "linked_procedures_section",
+   "fieldtype": "Section Break",
+   "label": "Linked Procedures"
+  },
+  {
+   "fieldname": "procedure_linked_table",
+   "fieldtype": "Table",
+   "label": "Procedure Linked Table",
+   "options": "Procedure Linked Details"
+  },
+  {
+   "fieldname": "linked_work_directives_section",
+   "fieldtype": "Section Break",
+   "label": "Linked Work Directives"
+  },
+  {
+   "fieldname": "work_directive_section",
+   "fieldtype": "Section Break",
+   "label": "Work Directive"
+  },
+  {
+   "fieldname": "work_directive_description",
+   "fieldtype": "Text Editor",
+   "label": "Work Directive Description"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "WD",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "relevant_forms_table",
+   "fieldtype": "Table",
+   "label": "Relevant Forms Table",
+   "options": "WD Relevant Form"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-24 12:22:49.493405",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "WD",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,172 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-19 21:22:22.558980",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "item",
+  "column_break_3",
+  "item_name",
+  "section_break_5",
+  "responsible_party",
+  "date",
+  "column_break_7",
+  "party_name",
+  "next_date",
+  "section_break_9",
+  "type",
+  "column_break_11",
+  "maintenance_frequency",
+  "column_break_13",
+  "maintenance_frequency_no",
+  "section_break_15",
+  "brief_description",
+  "column_break_17",
+  "problems_corrected"
+ ],
+ "fields": [
+  {
+   "default": "AM-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "AM-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Assets"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "translatable": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "next_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Next Date"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Select",
+   "label": "Type",
+   "options": "\nRoutine\nPreventative\nCorrective",
+   "translatable": 1
+  },
+  {
+   "fieldname": "responsible_party",
+   "fieldtype": "Select",
+   "label": "Responsible Party",
+   "options": "\nSupplier\nEmployee"
+  },
+  {
+   "fieldname": "party_name",
+   "fieldtype": "Dynamic Link",
+   "in_list_view": 1,
+   "label": "Party Name",
+   "options": "responsible_party"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_13",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_15",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "item.maintenance_frequency",
+   "fieldname": "maintenance_frequency",
+   "fieldtype": "Data",
+   "label": "Maintenance Frequency",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fetch_from": "item.maintenance_frequency_no",
+   "fieldname": "maintenance_frequency_no",
+   "fieldtype": "Float",
+   "label": "Maintenance Frequency No",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "brief_description",
+   "fieldtype": "Small Text",
+   "label": "Brief Description",
+   "translatable": 1
+  },
+  {
+   "fieldname": "problems_corrected",
+   "fieldtype": "Small Text",
+   "label": "Problems Corrected",
+   "translatable": 1
+  }
+ ],
+ "modified": "2020-05-21 13:22:23.004464",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Assets Maintenance",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "item_name",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "item_name",
+ "track_changes": 1
+}

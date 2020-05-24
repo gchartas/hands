@@ -43,12 +43,14 @@
   {
    "fieldname": "rne",
    "fieldtype": "Data",
-   "label": "Requirements | Needs | Expectations"
+   "label": "Requirements | Needs | Expectations",
+   "translatable": 1
   },
   {
    "fieldname": "impact",
    "fieldtype": "Small Text",
-   "label": "Impact On the Organization"
+   "label": "Impact On the Organization",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_5",
@@ -69,7 +71,8 @@
   {
    "fieldname": "department_impact",
    "fieldtype": "Small Text",
-   "label": "Department Impact"
+   "label": "Department Impact",
+   "translatable": 1
   },
   {
    "fieldname": "site",
@@ -99,7 +102,7 @@
    "options": "Risk and Opportunity"
   }
  ],
- "modified": "2020-05-11 20:40:08.823613",
+ "modified": "2020-05-24 09:33:48.642120",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Interested Party",
@@ -127,17 +130,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }

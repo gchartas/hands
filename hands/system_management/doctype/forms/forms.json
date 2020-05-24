@@ -40,7 +40,8 @@
    "fieldname": "procedure_reference",
    "fieldtype": "Data",
    "label": "Procedure Reference",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "fieldname": "column_break_4",
@@ -51,7 +52,8 @@
    "fieldname": "procedure_title",
    "fieldtype": "Data",
    "label": "Procedure Title",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "fieldname": "section_break_6",
@@ -60,7 +62,8 @@
   {
    "fieldname": "title",
    "fieldtype": "Data",
-   "label": "Title"
+   "label": "Title",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_8",
@@ -82,7 +85,8 @@
   {
    "fieldname": "form",
    "fieldtype": "Text Editor",
-   "label": "Form"
+   "label": "Form",
+   "translatable": 1
   },
   {
    "fieldname": "details_section",
@@ -107,13 +111,15 @@
    "fieldname": "author",
    "fieldtype": "Data",
    "label": "Author",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "fetch_from": "procedure.company",
    "fieldname": "company",
    "fieldtype": "Data",
-   "label": "Company"
+   "label": "Company",
+   "translatable": 1
   },
   {
    "fieldname": "ref_no",
@@ -122,7 +128,7 @@
    "unique": 1
   }
  ],
- "modified": "2020-05-10 11:29:11.489257",
+ "modified": "2020-05-24 09:33:46.460792",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Forms",
@@ -150,18 +156,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }

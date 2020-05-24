@@ -87,6 +87,12 @@ def get_data():
                     "name": "Competence Evaluation",
                     "label": "Competence and Evaluation"
                 },
+                {
+                    "type": "doctype",
+                    "name": "Teams",
+                    "label": "Teams"
+                },
+
             ]
         },
         {"label": _("Training"),
@@ -171,7 +177,26 @@ def get_data():
                     "type": "doctype",
                     "name": "Asset Calibration Template",
                 },
+                {
+                    "type": "doctype",
+                    "name": "Assets Maintenance",
+                },
                 ]
+        },
+        {"label": _("Policies and Objectives"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "Policy",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Objective",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Manual",
+                },]
         },
         {"label": _("Documented Information"),
             "items": [
@@ -182,6 +207,16 @@ def get_data():
                 {
                     "type": "doctype",
                     "name": "Forms",
-                },]
+                },
+                {
+                    "type": "doctype",
+                    "name": "External Documents",
+                },
+                {
+                    "type": "doctype",
+                    "name": "WD",
+                    "label": "Work Directive",
+                },
+]
         },
     ]

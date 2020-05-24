@@ -11,11 +11,12 @@
    "fieldname": "parameter",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Parameter"
+   "label": "Parameter",
+   "translatable": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-13 21:46:57.656683",
+ "modified": "2020-05-21 13:43:51.124495",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Supplier Evaluation Template Parameter",

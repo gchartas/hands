@@ -13,7 +13,8 @@
    "fieldname": "step",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Step"
+   "label": "Step",
+   "translatable": 1
   },
   {
    "fieldname": "responsibility",
@@ -26,11 +27,12 @@
    "fieldname": "associated_data",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Associated Data/Resources Required"
+   "label": "Associated Data/Resources Required",
+   "translatable": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-15 18:04:26.495106",
+ "modified": "2020-05-21 13:38:31.282110",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Process Procedure Table",

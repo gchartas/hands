@@ -15,7 +15,7 @@
    "options": "LCM-"
   }
  ],
- "modified": "2020-05-08 23:08:41.590624",
+ "modified": "2020-05-24 17:15:00.877740",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Lifecycle Management",
@@ -45,15 +45,6 @@
    "role": "Administrator",
    "share": 1,
    "write": 1
-  },
-  {
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
-   "share": 1
   }
  ],
  "quick_entry": 1,

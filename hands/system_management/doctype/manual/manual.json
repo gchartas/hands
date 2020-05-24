@@ -1,0 +1,160 @@
+{
+ "autoname": "naming_series",
+ "creation": "2020-05-24 12:35:08.519613",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "title",
+  "column_break_3",
+  "author",
+  "section_break_3",
+  "publish_date",
+  "column_break_5",
+  "next_review_date",
+  "column_break_7",
+  "rev",
+  "column_break_11",
+  "company",
+  "revision_section",
+  "revision_history",
+  "manual_section",
+  "manual",
+  "linked_documents_section",
+  "linked_procedures",
+  "linked_forms",
+  "linked_lists"
+ ],
+ "fields": [
+  {
+   "default": "Manual-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Manual SN",
+   "options": "Manual-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_review_date",
+   "fieldtype": "Date",
+   "label": "Next Review Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Revision"
+  },
+  {
+   "fieldname": "revision_section",
+   "fieldtype": "Section Break",
+   "label": "Revision"
+  },
+  {
+   "fieldname": "revision_history",
+   "fieldtype": "Table",
+   "label": "Revision History",
+   "options": "Procedure Revision History"
+  },
+  {
+   "fieldname": "manual_section",
+   "fieldtype": "Section Break",
+   "label": "Manual"
+  },
+  {
+   "fieldname": "manual",
+   "fieldtype": "Text Editor",
+   "label": "Manual"
+  },
+  {
+   "fieldname": "linked_documents_section",
+   "fieldtype": "Section Break",
+   "label": "Linked Documents"
+  },
+  {
+   "fieldname": "linked_procedures",
+   "fieldtype": "Table",
+   "label": "Linked Procedures",
+   "options": "Procedure Linked Details"
+  },
+  {
+   "fieldname": "linked_forms",
+   "fieldtype": "Table",
+   "label": "Linked Forms",
+   "options": "Forms Details"
+  },
+  {
+   "fieldname": "linked_lists",
+   "fieldtype": "Table",
+   "label": "Linked Lists",
+   "options": "WD Relevant Form"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  }
+ ],
+ "modified": "2020-05-24 12:36:39.736122",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Manual",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

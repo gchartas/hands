@@ -1,0 +1,103 @@
+{
+ "autoname": "field:item_name",
+ "creation": "2020-05-20 12:37:51.332715",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item",
+  "column_break_2",
+  "item_name",
+  "section_break_4",
+  "uom",
+  "concetration",
+  "column_break_5",
+  "new_uom",
+  "new_concetration",
+  "section_break_8",
+  "attach"
+ ],
+ "fields": [
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fetch_from": "item.item_name",
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name",
+   "translatable": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "concetration",
+   "fieldtype": "Float",
+   "label": "Concetration",
+   "precision": "2"
+  },
+  {
+   "fieldname": "attach",
+   "fieldtype": "Attach",
+   "label": "Attach"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "new_uom",
+   "fieldtype": "Link",
+   "label": "New UOM",
+   "options": "UOM"
+  },
+  {
+   "fieldname": "new_concetration",
+   "fieldtype": "Float",
+   "label": "New Concetration"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "modified": "2020-05-23 10:53:03.575557",
+ "modified_by": "Administrator",
+ "module": "Water Safety",
+ "name": "Chemicals",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

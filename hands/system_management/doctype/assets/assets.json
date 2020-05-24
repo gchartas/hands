@@ -36,7 +36,8 @@
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Item Name"
+   "label": "Item Name",
+   "translatable": 1
   },
   {
    "fieldname": "purchase_date",
@@ -48,12 +49,14 @@
    "fieldname": "serial_number",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Serial Number"
+   "label": "Serial Number",
+   "translatable": 1
   },
   {
    "fieldname": "lot_number",
    "fieldtype": "Data",
-   "label": "Lot Number"
+   "label": "Lot Number",
+   "translatable": 1
   },
   {
    "default": "ASSET-",
@@ -128,7 +131,7 @@
    "precision": "0"
   }
  ],
- "modified": "2020-05-15 19:03:49.874775",
+ "modified": "2020-05-21 13:21:15.722561",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Assets",

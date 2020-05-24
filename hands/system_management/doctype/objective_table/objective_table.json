@@ -1,0 +1,42 @@
+{
+ "creation": "2020-05-23 19:39:48.711471",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "objective_actions",
+  "monitoring_frequency",
+  "frequency_multiplier"
+ ],
+ "fields": [
+  {
+   "fieldname": "objective_actions",
+   "fieldtype": "Small Text",
+   "label": "Objective Actions"
+  },
+  {
+   "fieldname": "monitoring_frequency",
+   "fieldtype": "Select",
+   "label": "Monitoring Frequency",
+   "options": "\nDaily\nWeekly\nMonthly\nYearly"
+  },
+  {
+   "default": "1",
+   "fieldname": "frequency_multiplier",
+   "fieldtype": "Float",
+   "label": "Frequency Multiplier",
+   "precision": "0"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-23 19:39:48.711471",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "Objective Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -3,3 +3,5 @@ System Management
 Testing
 Housekeeping
 FSMS
+Water Safety
+Occupational Health and Safety

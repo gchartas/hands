@@ -11,6 +11,7 @@
   "column_break_4",
   "employee_name",
   "fridge_type",
+  "fridge_name",
   "section_break_7",
   "now",
   "column_break_9",
@@ -69,7 +70,8 @@
    "fieldname": "employee_name",
    "fieldtype": "Data",
    "label": "Employee Name",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "fieldname": "section_break_7",
@@ -91,7 +93,7 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date",
-   "set_only_once": 1
+   "read_only": 1
   },
   {
    "fieldname": "column_break_11",
@@ -102,7 +104,7 @@
    "fieldname": "time",
    "fieldtype": "Time",
    "label": "Time",
-   "set_only_once": 1
+   "read_only": 1
   },
   {
    "fieldname": "section_break_13",
@@ -130,7 +132,8 @@
    "fieldname": "emp_name",
    "fieldtype": "Data",
    "label": "Emp Name",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "fieldname": "column_break_18",
@@ -154,11 +157,19 @@
    "fieldname": "ideal_temp",
    "fieldtype": "Data",
    "label": "Ideal Temp",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fetch_from": "fridge.fridge_name",
+   "fieldname": "fridge_name",
+   "fieldtype": "Data",
+   "label": "Fridge Name",
    "read_only": 1
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-12 19:40:18.822903",
+ "modified": "2020-05-24 14:26:18.422762",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Fridge Temp Control",

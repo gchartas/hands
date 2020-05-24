@@ -31,10 +31,11 @@
    "fieldname": "item_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Item Name"
+   "label": "Item Name",
+   "translatable": 1
   }
  ],
- "modified": "2020-05-12 16:09:04.382017",
+ "modified": "2020-05-23 10:49:51.762768",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Product",

@@ -1,0 +1,161 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-24 13:54:26.654340",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "column_break_3",
+  "deep_fryer",
+  "days",
+  "section_break_3",
+  "now",
+  "column_break_5",
+  "date",
+  "column_break_18",
+  "next_change",
+  "column_break_7",
+  "type_of_oil",
+  "signatures_section",
+  "employee_signature",
+  "employee_name",
+  "column_break_12",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "DFOC-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "DFOC-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "next_change",
+   "fieldtype": "Date",
+   "label": "Next Change"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "type_of_oil",
+   "fieldtype": "Link",
+   "label": "Type of Oil",
+   "options": "Raw Material"
+  },
+  {
+   "fieldname": "signatures_section",
+   "fieldtype": "Section Break",
+   "label": "Signatures"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "employee_signature",
+   "fieldtype": "Signature",
+   "label": "Employee Signature"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "now",
+   "fieldtype": "Button",
+   "label": "Now"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "deep_fryer",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Deep Fryer",
+   "options": "Deep Fryer"
+  },
+  {
+   "fetch_from": "deep_fryer.days",
+   "fieldname": "days",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Days",
+   "precision": "0",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Deep Fryer Oil Change",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-24 14:07:35.658195",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "Deep Fryer Oil Change",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "deep_fryer",
+ "track_changes": 1
+}

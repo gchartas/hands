@@ -18,10 +18,11 @@
   {
    "fieldname": "corrective_action",
    "fieldtype": "Small Text",
-   "label": "Corrective Action"
+   "label": "Corrective Action",
+   "translatable": 1
   }
  ],
- "modified": "2020-05-12 14:48:52.629464",
+ "modified": "2020-05-21 13:50:55.193733",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Corrective Actions",

@@ -1,0 +1,89 @@
+{
+ "creation": "2020-05-24 15:08:55.910534",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "haccp_process",
+  "oprp_hazard_type",
+  "preventive_measures",
+  "monitoring",
+  "oprp_corrective_actions",
+  "responsible",
+  "procedures_and_directives"
+ ],
+ "fields": [
+  {
+   "fieldname": "haccp_process",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Process",
+   "options": "HACCP Process"
+  },
+  {
+   "fetch_from": "haccp_process.oprp_hazard_type",
+   "fieldname": "oprp_hazard_type",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "OPRP Hazard Type ",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fetch_from": "haccp_process.preventive_measures",
+   "fieldname": "preventive_measures",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Preventive Measures",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fetch_from": "haccp_process.monitoring",
+   "fieldname": "monitoring",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Monitoring",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fetch_from": "oprp_corrective_actions",
+   "fieldname": "oprp_corrective_actions",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "OPRP Corrective Actions",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fetch_from": "haccp_process.responsible",
+   "fieldname": "responsible",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Responsible",
+   "options": "Role",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "haccp_process.procedures_and_directives",
+   "fieldname": "procedures_and_directives",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Procedures and Directives",
+   "read_only": 1,
+   "translatable": 1
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-24 15:08:55.910534",
+ "modified_by": "Administrator",
+ "module": "FSMS",
+ "name": "OPRP Plan Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

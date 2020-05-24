@@ -1,0 +1,30 @@
+{
+ "creation": "2020-05-24 12:19:42.720681",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "doctype_name"
+ ],
+ "fields": [
+  {
+   "fieldname": "doctype_name",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Doctype",
+   "options": "DocType"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-24 12:23:23.077793",
+ "modified_by": "Administrator",
+ "module": "System Management",
+ "name": "WD Relevant Form",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

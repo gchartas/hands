@@ -8,9 +8,12 @@
  "field_order": [
   "naming_series",
   "item",
-  "employee",
+  "responsibility",
+  "responsible_party",
+  "attachment",
   "column_break_3",
   "item_name",
+  "description",
   "section_break_5",
   "calibration_frequency",
   "column_break_7",
@@ -24,7 +27,8 @@
   "parameters",
   "section_break_17",
   "employee_signature",
-  "employe_name",
+  "employee_name",
+  "supplier_name",
   "column_break_20",
   "cal_status",
   "amended_from"
@@ -56,7 +60,8 @@
    "fieldname": "item_name",
    "fieldtype": "Data",
    "label": "Item Name",
-   "read_only": 1
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "fieldname": "section_break_5",
@@ -108,12 +113,6 @@
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "employee",
-   "fieldtype": "Link",
-   "label": "Employee",
-   "options": "Employee"
-  },
-  {
    "fieldname": "calibration_template",
    "fieldtype": "Link",
    "label": "Calibration Template",
@@ -133,15 +132,6 @@
    "fieldname": "employee_signature",
    "fieldtype": "Signature",
    "label": "Employee Signature"
-  },
-  {
-   "columns": 2,
-   "fetch_from": "employee.employee_name",
-   "fieldname": "employe_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Employe Name",
-   "read_only": 1
   },
   {
    "fieldname": "column_break_20",
@@ -164,10 +154,46 @@
    "label": "Status",
    "options": "\nPass\nFail",
    "read_only": 1
+  },
+  {
+   "fieldname": "responsibility",
+   "fieldtype": "Select",
+   "label": "Responsibility",
+   "options": "\nEmployee\nSupplier"
+  },
+  {
+   "fieldname": "responsible_party",
+   "fieldtype": "Dynamic Link",
+   "label": "Responsible Party",
+   "options": "responsibility"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "label": "Employee Name",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fieldname": "supplier_name",
+   "fieldtype": "Data",
+   "label": "Supplier Name",
+   "read_only": 1,
+   "translatable": 1
+  },
+  {
+   "fieldname": "attachment",
+   "fieldtype": "Attach",
+   "label": "Attachment"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-15 22:06:47.912693",
+ "modified": "2020-05-21 13:17:01.083510",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Asset Calibration",

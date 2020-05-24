@@ -1,0 +1,35 @@
+{
+ "creation": "2020-05-24 15:28:54.726850",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "parameter",
+  "parameter_check"
+ ],
+ "fields": [
+  {
+   "fieldname": "parameter",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Parameter"
+  },
+  {
+   "default": "0",
+   "fieldname": "parameter_check",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Parameter Check"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-05-24 15:37:51.483903",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "Employee Daily Check Parameter",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,140 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-24 15:22:08.186688",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "employee",
+  "column_break_3",
+  "employee_name",
+  "section_break_5",
+  "date",
+  "column_break_7",
+  "time",
+  "symptoms_check_section",
+  "template",
+  "parameters",
+  "vitals_measurements_section",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "employee",
+   "fieldtype": "Link",
+   "label": "Employee",
+   "options": "Employee"
+  },
+  {
+   "fetch_from": "employee.employee_name",
+   "fieldname": "employee_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Employee Name"
+  },
+  {
+   "default": "EC-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "EC-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_7",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "symptoms_check_section",
+   "fieldtype": "Section Break",
+   "label": "Symptoms Check"
+  },
+  {
+   "fieldname": "vitals_measurements_section",
+   "fieldtype": "Section Break",
+   "label": "Vitals Measurements"
+  },
+  {
+   "fieldname": "template",
+   "fieldtype": "Link",
+   "label": "Template",
+   "options": "Employee Daily Check Template"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Employee Daily Check",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Employee Daily Check Parameters",
+   "options": "Employee Daily Check Parameter"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-24 15:35:56.940379",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "Employee Daily Check",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Manufacturing User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "employee_name",
+ "track_changes": 1
+}

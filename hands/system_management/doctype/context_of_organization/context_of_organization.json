@@ -42,12 +42,14 @@
   {
    "fieldname": "mark",
    "fieldtype": "Small Text",
-   "label": "Where Do We Aim to Be?"
+   "label": "Where Do We Aim to Be?",
+   "translatable": 1
   },
   {
    "fieldname": "reason",
    "fieldtype": "Small Text",
-   "label": "Why This Business Is Good Business to Be In?"
+   "label": "Why This Business Is Good Business to Be In?",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_4",
@@ -56,7 +58,8 @@
   {
    "fieldname": "scope",
    "fieldtype": "Small Text",
-   "label": "What Do We Do? What Makes Us Different?"
+   "label": "What Do We Do? What Makes Us Different?",
+   "translatable": 1
   },
   {
    "fieldname": "department",
@@ -73,7 +76,8 @@
   {
    "fieldname": "approving_authority",
    "fieldtype": "Data",
-   "label": "Approving Authority"
+   "label": "Approving Authority",
+   "translatable": 1
   },
   {
    "fieldname": "swot_section",
@@ -83,12 +87,14 @@
   {
    "fieldname": "strenght",
    "fieldtype": "Text Editor",
-   "label": "Strenght"
+   "label": "Strenght",
+   "translatable": 1
   },
   {
    "fieldname": "opportunity",
    "fieldtype": "Text Editor",
-   "label": "Opportunity"
+   "label": "Opportunity",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_12",
@@ -97,12 +103,14 @@
   {
    "fieldname": "weakness",
    "fieldtype": "Text Editor",
-   "label": "Weakness"
+   "label": "Weakness",
+   "translatable": 1
   },
   {
    "fieldname": "threat",
    "fieldtype": "Text Editor",
-   "label": "Threat"
+   "label": "Threat",
+   "translatable": 1
   },
   {
    "fieldname": "pestle_section",
@@ -112,17 +120,20 @@
   {
    "fieldname": "political",
    "fieldtype": "Small Text",
-   "label": "Political"
+   "label": "Political",
+   "translatable": 1
   },
   {
    "fieldname": "social",
    "fieldtype": "Small Text",
-   "label": "Social"
+   "label": "Social",
+   "translatable": 1
   },
   {
    "fieldname": "legal",
    "fieldtype": "Small Text",
-   "label": "Legal"
+   "label": "Legal",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_19",
@@ -131,20 +142,23 @@
   {
    "fieldname": "economic",
    "fieldtype": "Small Text",
-   "label": "Economic"
+   "label": "Economic",
+   "translatable": 1
   },
   {
    "fieldname": "technological",
    "fieldtype": "Small Text",
-   "label": "Technological"
+   "label": "Technological",
+   "translatable": 1
   },
   {
    "fieldname": "environmental",
    "fieldtype": "Small Text",
-   "label": "Environmental"
+   "label": "Environmental",
+   "translatable": 1
   }
  ],
- "modified": "2020-05-11 20:08:14.494743",
+ "modified": "2020-05-24 09:32:50.821100",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Context of Organization",
@@ -172,17 +186,6 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
-   "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "ISO Manager",
    "share": 1,
    "write": 1
   }
