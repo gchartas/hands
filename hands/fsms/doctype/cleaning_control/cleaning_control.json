@@ -140,7 +140,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-24 13:39:27.005628",
+ "modified": "2020-05-24 17:47:58.780571",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Cleaning Control",
@@ -168,6 +168,18 @@
    "read": 1,
    "report": 1,
    "role": "Administrator",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp User",
    "share": 1,
    "write": 1
   }
