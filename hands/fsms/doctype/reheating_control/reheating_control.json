@@ -1,93 +1,126 @@
 {
  "autoname": "naming_series:",
- "creation": "2020-05-24 13:14:20.122442",
+ "creation": "2020-05-25 20:11:03.010442",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
   "employee",
-  "column_break_3",
-  "type",
   "section_break_3",
-  "now",
-  "column_break_4",
   "date",
-  "column_break_6",
+  "column_break_5",
   "time",
-  "column_break_2",
-  "template",
-  "parameters",
-  "section_break_6",
+  "section_break_7",
+  "product",
+  "column_break_9",
+  "product_name",
+  "section_break_11",
+  "temp",
+  "car_section",
+  "corrective_action",
+  "column_break_15",
+  "remarks",
+  "signature_section",
   "employee_signature",
   "employee_name",
-  "column_break_15",
   "amended_from"
  ],
  "fields": [
   {
-   "default": "CC-",
+   "default": "RHC-",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Title",
-   "options": "CC-",
-   "print_hide": 1,
+   "options": "RHC-",
    "read_only": 1
   },
   {
-   "allow_in_quick_entry": 1,
-   "bold": 1,
    "fieldname": "employee",
    "fieldtype": "Link",
-   "in_list_view": 1,
    "label": "Employee",
-   "options": "Employee",
-   "reqd": 1
+   "options": "Employee"
   },
   {
    "fieldname": "section_break_3",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "column_break_4",
-   "fieldtype": "Column Break"
-  },
-  {
-   "fieldname": "time",
-   "fieldtype": "Time",
-   "label": "Time",
-   "read_only": 1
-  },
-  {
-   "fieldname": "column_break_6",
-   "fieldtype": "Column Break"
-  },
-  {
    "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
-   "label": "Date",
-   "set_only_once": 1
+   "in_list_view": 1,
+   "label": "Date"
   },
   {
-   "fieldname": "column_break_2",
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "section_break_7",
    "fieldtype": "Section Break"
   },
   {
-   "fieldname": "parameters",
-   "fieldtype": "Table",
-   "label": "Clean Check",
-   "options": "Cleaning Control Parameter"
+   "fieldname": "product",
+   "fieldtype": "Link",
+   "label": "Product",
+   "options": "Product"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "product.item_name",
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "temp",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Temp",
+   "precision": "1"
   },
   {
    "collapsible": 1,
-   "fieldname": "section_break_6",
+   "fieldname": "car_section",
    "fieldtype": "Section Break",
-   "label": "Signatures"
+   "label": "Corrective Actions and Remarks"
   },
   {
-   "allow_in_quick_entry": 1,
+   "fieldname": "corrective_action",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action"
+  },
+  {
+   "fieldname": "column_break_15",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "signature_section",
+   "fieldtype": "Section Break",
+   "label": "Signature"
+  },
+  {
    "fieldname": "employee_signature",
    "fieldtype": "Signature",
    "label": "Employee Signature"
@@ -96,58 +129,30 @@
    "fetch_from": "employee.employee_name",
    "fieldname": "employee_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Employee Name",
    "read_only": 1
-  },
-  {
-   "fieldname": "column_break_15",
-   "fieldtype": "Column Break"
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Cleaning Control",
+   "options": "Reheating Control",
    "print_hide": 1,
    "read_only": 1
-  },
-  {
-   "fieldname": "now",
-   "fieldtype": "Button",
-   "label": "Now"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "bold": 1,
-   "fieldname": "template",
-   "fieldtype": "Link",
-   "in_list_view": 1,
-   "label": "Template",
-   "options": "Cleaning Control Template"
-  },
-  {
-   "fieldname": "column_break_3",
-   "fieldtype": "Column Break"
-  },
-  {
-   "allow_in_quick_entry": 1,
-   "fieldname": "type",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "label": "Type",
-   "options": "Daily\nWeekly"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-25 20:23:08.587381",
+ "modified": "2020-05-25 21:17:11.452937",
  "modified_by": "Administrator",
  "module": "FSMS",
- "name": "Cleaning Control",
+ "name": "Reheating Control",
  "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -157,18 +162,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
-   "write": 1
-  },
-  {
-   "create": 1,
-   "delete": 1,
-   "email": 1,
-   "export": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Administrator",
-   "share": 1,
+   "submit": 1,
    "write": 1
   },
   {
@@ -199,10 +193,8 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
- "search_fields": "employee_name,template",
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "employee_name",
+ "title_field": "product_name",
  "track_changes": 1
 }

@@ -8,7 +8,6 @@ def get_data():
                 {
                     "type": "doctype",
                     "name": "Cleaning Control",
-                    "label": "Cleaning Control",
                 },
                 {
                     "type": "doctype",
@@ -21,8 +20,12 @@ def get_data():
                 {
                     "type": "doctype",
                     "name": "Receiving Goods",
-                    "label": "Receiving Goods"
                 },
+                {
+                    "type": "doctype",
+                    "name": "Reheating Control",
+                },
+
             ]
         },
         {"label": _("Items and Purchase"),
@@ -38,7 +41,6 @@ def get_data():
                 {
                     "type": "doctype",
                     "name": "Receiving Goods",
-                    "label": "Receiving Goods"
                 },
                 {
                     "type": "doctype",
@@ -56,12 +58,10 @@ def get_data():
                 {
                     "type": "doctype",
                     "name": "Cleaning Control Template",
-                    "label": "Cleaning Control Template",
                 },
                 {
                     "type": "doctype",
                     "name": "Fridge List",
-                    "label": "Fridge",
                 },
                 {
                     "type": "doctype",
@@ -82,16 +82,13 @@ def get_data():
                 {
                     "type": "doctype",
                     "name": "HACCP Process",
-                    "label": "Processes",
                 },
                 {
                     "type": "doctype",
                     "name": "HACCP Plan",
-                    "label": "HACCP Plan",
                 },
                 {
                     "type": "doctype",
-                    "name": "OPRP Plan",
                 },
             ]
         },
@@ -100,12 +97,10 @@ def get_data():
                 {
                     "type": "doctype",
                     "name": "Employee Daily Check",
-                    "label": "Employee Daily Check",
                 },
                 {
                     "type": "doctype",
                     "name": "Employee Daily Check Template",
-                    "label": "Employee Daily Check Template",
                 },
             ]
         },

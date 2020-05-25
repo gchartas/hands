@@ -31,7 +31,7 @@
    "precision": "0"
   }
  ],
- "modified": "2020-05-24 14:03:10.314331",
+ "modified": "2020-05-25 20:20:37.937731",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Deep Fryer",
@@ -47,6 +47,27 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp User",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp Manager",
    "share": 1,
    "write": 1
   }

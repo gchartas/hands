@@ -16,6 +16,7 @@
   "symptoms_check_section",
   "template",
   "parameters",
+  "remarks",
   "vitals_measurements_section",
   "amended_from"
  ],
@@ -31,7 +32,8 @@
    "fieldname": "employee_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Employee Name"
+   "label": "Employee Name",
+   "read_only": 1
   },
   {
    "default": "EC-",
@@ -51,6 +53,7 @@
    "fieldtype": "Section Break"
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
    "label": "Date"
@@ -94,10 +97,15 @@
    "fieldtype": "Table",
    "label": "Employee Daily Check Parameters",
    "options": "Employee Daily Check Parameter"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-24 15:35:56.940379",
+ "modified": "2020-05-25 21:04:41.761283",
  "modified_by": "Administrator",
  "module": "Occupational Health and Safety",
  "name": "Employee Daily Check",
@@ -120,13 +128,28 @@
   },
   {
    "create": 1,
+   "email": 1,
+   "export": 1,
+   "if_owner": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Manufacturing User",
+   "role": "Occupational Doctor",
    "share": 1,
    "submit": 1,
    "write": 1

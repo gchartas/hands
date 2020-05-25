@@ -35,7 +35,7 @@
    "translatable": 1
   }
  ],
- "modified": "2020-05-23 10:49:51.762768",
+ "modified": "2020-05-25 21:02:07.799147",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Product",
@@ -51,6 +51,30 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp User",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp Manager",
    "share": 1,
    "write": 1
   }
