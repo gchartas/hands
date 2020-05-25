@@ -40,7 +40,7 @@ frappe.ui.form.on('Receiving Goods', {
 	},
 	before_submit:function(frm){
 	    if(!frm.doc.employee_signature){
-	        frappe.throw("Δεν μπορείς να ολοκληρώσεις χωρίς υπογραφή!");
+	        frappe.throw("You Cannot Submit without Signature");
 	        frappe.validated = false;
 	    }
 	}

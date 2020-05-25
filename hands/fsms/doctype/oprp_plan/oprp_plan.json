@@ -38,7 +38,7 @@
    "options": "OPRP Plan Table"
   }
  ],
- "modified": "2020-05-24 15:10:01.353342",
+ "modified": "2020-05-25 19:37:55.296272",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "OPRP Plan",
@@ -53,6 +53,17 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp Manager",
    "share": 1,
    "write": 1
   }

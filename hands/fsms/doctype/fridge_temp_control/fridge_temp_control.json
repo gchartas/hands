@@ -169,7 +169,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-24 14:26:18.422762",
+ "modified": "2020-05-25 19:39:13.808907",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Fridge Temp Control",
@@ -185,6 +185,33 @@
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp Manager",
    "share": 1,
    "submit": 1,
    "write": 1
