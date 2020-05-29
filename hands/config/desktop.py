@@ -32,5 +32,13 @@ def get_data():
 	        "icon": "octicon octicon-git-branch",
 	        "type": "module",
 	        "label": _("Water Management")
-	    }
+	    },
+	    {
+	        "module_name": "Housekeeping",
+	        "color": "grey",
+	        "icon": "octicon octicon-pulse",
+	        "type": "module",
+	        "label": _("Housekeeping")
+	    },
+
 	    ]
