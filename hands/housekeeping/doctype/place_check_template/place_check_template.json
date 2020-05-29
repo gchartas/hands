@@ -31,7 +31,7 @@
    "options": "Place Check Template Parameter"
   }
  ],
- "modified": "2020-05-24 17:15:04.284091",
+ "modified": "2020-05-29 13:50:49.076661",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Place Check Template",
@@ -61,6 +61,27 @@
    "role": "Administrator",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping User",
+   "share": 1
   }
  ],
  "quick_entry": 1,

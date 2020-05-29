@@ -127,7 +127,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-24 17:15:46.749770",
+ "modified": "2020-05-29 13:51:40.914781",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Place Check Cleaning",
@@ -156,6 +156,33 @@
    "report": 1,
    "role": "Administrator",
    "share": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping User",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

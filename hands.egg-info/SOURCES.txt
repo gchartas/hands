@@ -17,6 +17,7 @@ hands/config/__init__.py
 hands/config/desktop.py
 hands/config/docs.py
 hands/config/fsms.py
+hands/config/housekeeping.py
 hands/config/system_management.py
 hands/config/water_safety.py
 hands/fixtures/custom_field.json
@@ -116,9 +117,19 @@ hands/fsms/doctype/recipe/test_recipe.py
 hands/fsms/doctype/recipe_items/__init__.py
 hands/fsms/doctype/recipe_items/recipe_items.json
 hands/fsms/doctype/recipe_items/recipe_items.py
+hands/fsms/doctype/reheating_control/__init__.py
+hands/fsms/doctype/reheating_control/reheating_control.js
+hands/fsms/doctype/reheating_control/reheating_control.json
+hands/fsms/doctype/reheating_control/reheating_control.py
+hands/fsms/doctype/reheating_control/test_reheating_control.py
 hands/hands_app/__init__.py
 hands/housekeeping/__init__.py
 hands/housekeeping/doctype/__init__.py
+hands/housekeeping/doctype/housekeeping_chemicals/__init__.py
+hands/housekeeping/doctype/housekeeping_chemicals/housekeeping_chemicals.js
+hands/housekeeping/doctype/housekeeping_chemicals/housekeeping_chemicals.json
+hands/housekeeping/doctype/housekeeping_chemicals/housekeeping_chemicals.py
+hands/housekeeping/doctype/housekeeping_chemicals/test_housekeeping_chemicals.py
 hands/housekeeping/doctype/place_check_cleaning/__init__.py
 hands/housekeeping/doctype/place_check_cleaning/place_check_cleaning.js
 hands/housekeeping/doctype/place_check_cleaning/place_check_cleaning.json
