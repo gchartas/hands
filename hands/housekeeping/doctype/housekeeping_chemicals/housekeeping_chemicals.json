@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "field:item_name",
  "creation": "2020-05-29 12:27:43.969530",
  "doctype": "DocType",
@@ -91,7 +92,7 @@
    "label": "Remarks"
   }
  ],
- "modified": "2020-05-29 12:27:50.905459",
+ "modified": "2020-05-30 15:28:27.020852",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Housekeeping Chemicals",
@@ -102,6 +103,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

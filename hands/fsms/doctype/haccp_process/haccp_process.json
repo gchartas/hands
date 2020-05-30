@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "field:haccp_process_name",
  "creation": "2020-05-24 10:09:36.132401",
  "doctype": "DocType",
@@ -178,7 +179,7 @@
   }
  ],
  "is_tree": 1,
- "modified": "2020-05-25 20:21:23.309724",
+ "modified": "2020-05-30 15:19:50.123594",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "HACCP Process",
@@ -191,6 +192,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

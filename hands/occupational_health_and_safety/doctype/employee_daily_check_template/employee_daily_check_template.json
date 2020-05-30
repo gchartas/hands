@@ -35,7 +35,7 @@
    "options": "Employee Daily Check Template Parameter"
   }
  ],
- "modified": "2020-05-25 22:31:18.786023",
+ "modified": "2020-05-30 15:31:57.446099",
  "modified_by": "Administrator",
  "module": "Occupational Health and Safety",
  "name": "Employee Daily Check Template",
@@ -46,6 +46,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

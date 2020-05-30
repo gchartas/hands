@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2020-05-12 19:00:49.295116",
  "doctype": "DocType",
@@ -54,7 +55,7 @@
    "precision": "1"
   }
  ],
- "modified": "2020-05-25 20:32:05.309954",
+ "modified": "2020-05-30 15:24:03.767969",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Fridge List",
@@ -66,6 +67,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

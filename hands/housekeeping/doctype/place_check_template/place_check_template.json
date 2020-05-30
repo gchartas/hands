@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "field:description",
  "creation": "2020-05-23 11:43:00.111331",
  "doctype": "DocType",
@@ -31,7 +32,7 @@
    "options": "Place Check Template Parameter"
   }
  ],
- "modified": "2020-05-29 13:50:49.076661",
+ "modified": "2020-05-30 15:31:08.519837",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Place Check Template",
@@ -43,6 +44,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

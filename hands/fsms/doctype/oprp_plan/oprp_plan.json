@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2020-05-24 15:10:01.353342",
  "doctype": "DocType",
@@ -38,7 +39,7 @@
    "options": "OPRP Plan Table"
   }
  ],
- "modified": "2020-05-25 19:37:55.296272",
+ "modified": "2020-05-30 15:20:10.600903",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "OPRP Plan",
@@ -49,6 +50,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

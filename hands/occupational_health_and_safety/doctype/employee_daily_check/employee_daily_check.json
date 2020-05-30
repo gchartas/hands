@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2020-05-24 15:22:08.186688",
  "doctype": "DocType",
@@ -105,7 +106,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-29 13:53:08.742340",
+ "modified": "2020-05-30 15:31:35.645894",
  "modified_by": "Administrator",
  "module": "Occupational Health and Safety",
  "name": "Employee Daily Check",
@@ -118,6 +119,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

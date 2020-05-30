@@ -1,5 +1,6 @@
 {
  "allow_guest_to_view": 1,
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2020-05-12 16:08:59.664707",
  "doctype": "DocType",
@@ -43,7 +44,7 @@
   }
  ],
  "has_web_view": 1,
- "modified": "2020-05-29 12:59:33.909027",
+ "modified": "2020-05-30 15:20:36.305052",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "Product",
@@ -55,6 +56,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

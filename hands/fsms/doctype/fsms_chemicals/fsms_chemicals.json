@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "field:item_name",
  "creation": "2020-05-24 12:53:23.881178",
  "doctype": "DocType",
@@ -91,7 +92,7 @@
    "label": "Remarks"
   }
  ],
- "modified": "2020-05-25 20:45:33.318789",
+ "modified": "2020-05-30 15:24:59.753864",
  "modified_by": "Administrator",
  "module": "FSMS",
  "name": "FSMS Chemicals",
@@ -102,6 +103,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
