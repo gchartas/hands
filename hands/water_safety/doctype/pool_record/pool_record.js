@@ -84,13 +84,13 @@ frappe.ui.form.on('Pool Record', {
 	},
 	validate:function(frm){
 	    if(frm.doc.free_chlorine<=1 && !frm.doc.chlor_addition){
-	        alert("Πρέπει να Προσθέσεις Χλώριο");
+	        alert("Chlorine +");
 	    }
 	    if(frm.doc.ph<7 && !frm.doc.ph_plus_addition){
-	        alert("Πρέπει να Ανεβάσεις το pH");
+	        alert("pH +");
 	    }
 	    if(frm.doc.ph>7.8 && !frm.doc.ph_minus_addition){
-	        alert("Πρέπει να Ανεβάσεις το pH");
+	        alert("pH -");
 	    }
 	}
 });

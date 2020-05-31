@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "field:pool_name",
  "creation": "2020-05-20 10:33:45.920024",
  "doctype": "DocType",
@@ -231,7 +232,7 @@
    "label": "Ideal Copper"
   }
  ],
- "modified": "2020-05-31 13:06:55.555026",
+ "modified": "2020-05-31 18:07:50.196929",
  "modified_by": "Administrator",
  "module": "Water Safety",
  "name": "Pool",
@@ -242,10 +243,32 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water User",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water Manager",
    "share": 1,
    "write": 1
   }

@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2020-05-20 11:23:00.378577",
  "doctype": "DocType",
@@ -545,7 +546,7 @@
    "collapsible": 1,
    "fieldname": "add_disinfectant_2_section",
    "fieldtype": "Section Break",
-   "label": "Add Disinfectant 2"
+   "label": "Disinfectant 2"
   },
   {
    "fieldname": "add_dis_2",
@@ -667,7 +668,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-31 17:26:51.116896",
+ "modified": "2020-05-31 19:14:30.806075",
  "modified_by": "Administrator",
  "module": "Water Safety",
  "name": "Pool Record",
@@ -679,6 +680,7 @@
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,

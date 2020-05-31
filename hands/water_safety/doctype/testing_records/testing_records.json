@@ -1,4 +1,5 @@
 {
+ "allow_import": 1,
  "autoname": "naming_series:",
  "creation": "2020-05-31 13:11:59.744519",
  "doctype": "DocType",
@@ -10,7 +11,8 @@
   "type",
   "date",
   "next_date",
-  "attachment"
+  "attachment",
+  "amended_from"
  ],
  "fields": [
   {
@@ -50,9 +52,19 @@
    "fieldname": "attachment",
    "fieldtype": "Attach",
    "label": "Attachment"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Testing Records",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
- "modified": "2020-05-31 16:15:12.059095",
+ "is_submittable": 1,
+ "modified": "2020-05-31 18:09:09.427081",
  "modified_by": "Administrator",
  "module": "Water Safety",
  "name": "Testing Records",
@@ -60,15 +72,40 @@
  "owner": "Administrator",
  "permissions": [
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water User",
+   "share": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water Manager",
+   "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],
