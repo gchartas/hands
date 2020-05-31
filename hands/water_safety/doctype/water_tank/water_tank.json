@@ -1,0 +1,105 @@
+{
+ "autoname": "field:tank_name",
+ "creation": "2020-05-31 11:17:33.815264",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "tank_name",
+  "tank_volume",
+  "column_break_3",
+  "max_height",
+  "ideal_free_chlorine",
+  "maintenance_program_section",
+  "disinfectant",
+  "column_break_6",
+  "disinfectant_frequency",
+  "column_break_8",
+  "disinfectant_addition"
+ ],
+ "fields": [
+  {
+   "fieldname": "tank_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Water Tank Name",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tank_volume",
+   "fieldtype": "Float",
+   "label": "Tank Volume",
+   "precision": "2",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ideal_free_chlorine",
+   "fieldtype": "Float",
+   "label": "Ideal Free Chlorine",
+   "precision": "2"
+  },
+  {
+   "fieldname": "maintenance_program_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance Program"
+  },
+  {
+   "fieldname": "disinfectant",
+   "fieldtype": "Link",
+   "label": "Disinfectant",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disinfectant_frequency",
+   "fieldtype": "Data",
+   "label": "Disinfectant Frequency"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "disinfectant_addition",
+   "fieldtype": "Data",
+   "label": "Disinfectant Addition"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "max_height",
+   "fieldtype": "Float",
+   "label": "Max Height",
+   "precision": "1",
+   "reqd": 1
+  }
+ ],
+ "modified": "2020-05-31 13:06:48.978404",
+ "modified_by": "Administrator",
+ "module": "Water Safety",
+ "name": "Water Tank",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

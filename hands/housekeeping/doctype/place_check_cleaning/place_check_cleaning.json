@@ -36,14 +36,12 @@
    "read_only": 1
   },
   {
-   "allow_in_quick_entry": 1,
    "bold": 1,
    "fieldname": "employee",
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Employee",
-   "options": "Employee",
-   "reqd": 1
+   "options": "Employee"
   },
   {
    "fieldname": "start",
@@ -90,7 +88,8 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Place",
-   "options": "Place Check Template"
+   "options": "Place Check Template",
+   "reqd": 1
   },
   {
    "fieldname": "parameters",
@@ -133,10 +132,13 @@
    "fieldtype": "Column Break"
   },
   {
+   "allow_in_quick_entry": 1,
    "fieldname": "type_of_cleaning",
    "fieldtype": "Select",
+   "in_list_view": 1,
    "label": "Type of Cleaning",
-   "options": "Disinfection"
+   "options": "\nStay\nSwitch\nDeparture\nForbidden\nDisinfection",
+   "translatable": 1
   },
   {
    "collapsible": 1,
@@ -146,7 +148,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-30 15:30:42.717340",
+ "modified": "2020-05-30 16:21:08.791388",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Place Check Cleaning",

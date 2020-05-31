@@ -2,7 +2,21 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on('Pool', {
-	// refresh: function(frm) {
-
-	// }
+	pool_volume: function(frm){
+	    if(frm.doc.pool_volume && frm.doc.pool_storage){
+	        calculate_total(frm);
+	    }
+	},
+	pool_storage:function(frm){
+	    if(frm.doc.pool_volume && frm.doc.pool_storage){
+	        calculate_total(frm);
+	    }
+	}
 });
+
+var calculate_total = function(frm){
+    var total_volume;
+    total_volume = frm.doc.pool_volume + frm.doc.pool_storage;
+    cur_frm.set_value("total_volume",total_volume);
+    
+};

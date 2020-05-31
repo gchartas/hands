@@ -9,12 +9,17 @@
   "pool",
   "column_break_3",
   "pool_name",
+  "column_break_5",
+  "mode",
+  "cb_1024",
+  "pool_free_chlorine",
   "section_break_5",
   "pool_total_volume",
   "column_break_7",
   "pool_ph",
   "column_break_9",
-  "pool_free_chlorine",
+  "column_break_11",
+  "pool_copper",
   "section_break_11",
   "now",
   "column_break_13",
@@ -22,13 +27,20 @@
   "column_break_15",
   "time",
   "log_section",
-  "turbidity",
-  "column_break_19",
   "ph",
-  "column_break_21",
   "free_chlorine",
-  "column_break_23",
+  "column_break_19",
+  "turbidity",
   "temp",
+  "column_break_21",
+  "algae",
+  "visibility",
+  "column_break_23",
+  "copper",
+  "maintain_section",
+  "sweeping",
+  "column_break_34",
+  "backwash",
   "chemicals_section",
   "add_chlorine",
   "column_break_27",
@@ -37,6 +49,8 @@
   "concentration",
   "column_break_31",
   "chlor_addition",
+  "column_break_33",
+  "uom",
   "ph_minus_column",
   "add_ph_minus",
   "column_break_35",
@@ -45,29 +59,49 @@
   "coefficient_ph_minus",
   "column_break_39",
   "ph_minus_addition",
+  "column_break_43",
+  "ph_minus_uom",
   "ph_plus_column",
   "add_ph_plus",
-  "column_break_43",
+  "column_break_101",
   "base",
   "column_break_45",
   "coefficient_ph_plus",
   "column_break_47",
   "ph_plus_addition",
+  "column_break_53",
+  "ph_plus_uom",
   "algecide_column",
   "add_algecide",
   "column_break_51",
   "algecide",
-  "column_break_53",
+  "column_break_102",
   "coefficient_algecide",
   "column_break_55",
   "algecide_addition",
+  "column_break_63",
+  "algecide_uom",
   "flocculation_column",
   "add_flocculant",
+  "column_break_67",
   "floculant",
   "column_break_60",
   "coefficient_flocculant",
   "column_break_62",
-  "flocculant_addition"
+  "flocculant_addition",
+  "column_break_72",
+  "floculant_uom",
+  "add_disinfectant_2_section",
+  "add_dis_2",
+  "column_break_77",
+  "disinfectant_2",
+  "column_break_79",
+  "coefficient_disinfectant_2",
+  "column_break_81",
+  "dis_2_addition",
+  "column_break_83",
+  "dis_2_uom",
+  "amended_from"
  ],
  "fields": [
   {
@@ -84,7 +118,8 @@
    "fieldname": "pool",
    "fieldtype": "Link",
    "label": "Pool",
-   "options": "Pool"
+   "options": "Pool",
+   "reqd": 1
   },
   {
    "fetch_from": "pool.total_volume",
@@ -102,13 +137,16 @@
    "fetch_from": "pool.pool_name",
    "fieldname": "pool_name",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Pool Name",
    "read_only": 1,
    "translatable": 1
   },
   {
+   "collapsible": 1,
    "fieldname": "section_break_5",
-   "fieldtype": "Section Break"
+   "fieldtype": "Section Break",
+   "hidden": 1
   },
   {
    "fieldname": "column_break_7",
@@ -149,8 +187,10 @@
   {
    "fieldname": "date",
    "fieldtype": "Date",
+   "in_list_view": 1,
    "label": "Date",
-   "read_only": 1
+   "read_only": 1,
+   "reqd": 1
   },
   {
    "fieldname": "column_break_15",
@@ -159,6 +199,7 @@
   {
    "fieldname": "time",
    "fieldtype": "Time",
+   "in_list_view": 1,
    "label": "Time",
    "read_only": 1
   },
@@ -170,6 +211,8 @@
   },
   {
    "columns": 1,
+   "fetch_from": "pool.disinfection1",
+   "fetch_if_empty": 1,
    "fieldname": "chlorine",
    "fieldtype": "Link",
    "label": "Chlorine",
@@ -183,6 +226,8 @@
   },
   {
    "columns": 1,
+   "fetch_from": "pool.ph_minus",
+   "fetch_if_empty": 1,
    "fieldname": "acid",
    "fieldtype": "Link",
    "label": "acid",
@@ -197,6 +242,8 @@
   },
   {
    "columns": 1,
+   "fetch_from": "pool.ph_plus",
+   "fetch_if_empty": 1,
    "fieldname": "base",
    "fieldtype": "Link",
    "label": "base",
@@ -210,6 +257,8 @@
   },
   {
    "columns": 1,
+   "fetch_from": "pool.algecide",
+   "fetch_if_empty": 1,
    "fieldname": "algecide",
    "fieldtype": "Link",
    "label": "Algecide",
@@ -219,14 +268,14 @@
    "collapsible": 1,
    "fieldname": "flocculation_column",
    "fieldtype": "Section Break",
-   "hidden": 1,
    "label": "Flocculation"
   },
   {
    "columns": 1,
+   "fetch_from": "pool.flocculant",
+   "fetch_if_empty": 1,
    "fieldname": "floculant",
    "fieldtype": "Link",
-   "hidden": 1,
    "label": "Flocculant",
    "options": "Chemicals"
   },
@@ -238,6 +287,7 @@
   {
    "fieldname": "ph",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "pH",
    "precision": "1"
   },
@@ -254,7 +304,8 @@
    "fieldname": "turbidity",
    "fieldtype": "Select",
    "label": "Turbidity",
-   "options": "\nClear\nAlmost Clear\nBlurred"
+   "options": "\nClear\nAlmost Clear\nBlurred",
+   "translatable": 1
   },
   {
    "fieldname": "column_break_19",
@@ -267,6 +318,7 @@
   {
    "fieldname": "free_chlorine",
    "fieldtype": "Float",
+   "in_list_view": 1,
    "label": "Free Chlorine",
    "precision": "2"
   },
@@ -317,9 +369,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "acid.new_concetration",
    "fieldname": "coefficient_ph_minus",
    "fieldtype": "Float",
-   "label": "Coefficient pH minus"
+   "label": "Coefficient pH minus",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_39",
@@ -344,9 +398,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "base.new_concetration",
    "fieldname": "coefficient_ph_plus",
    "fieldtype": "Float",
-   "label": "Coefficient pH Plus"
+   "label": "Coefficient pH Plus",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_47",
@@ -371,9 +427,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "algecide.new_concetration",
    "fieldname": "coefficient_algecide",
    "fieldtype": "Float",
-   "label": "Coefficient Algecide"
+   "label": "Coefficient Algecide",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_55",
@@ -394,9 +452,11 @@
    "fieldtype": "Column Break"
   },
   {
+   "fetch_from": "floculant.new_concetration",
    "fieldname": "coefficient_flocculant",
    "fieldtype": "Float",
-   "label": "Coefficient Flocculant"
+   "label": "Coefficient Flocculant",
+   "read_only": 1
   },
   {
    "fieldname": "column_break_62",
@@ -406,12 +466,212 @@
    "fieldname": "flocculant_addition",
    "fieldtype": "Float",
    "label": "Flocculant Addition"
+  },
+  {
+   "fieldname": "column_break_33",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "chlorine.new_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "Uom",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Pool Record",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "acid.new_uom",
+   "fieldname": "ph_minus_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_101",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "base.new_uom",
+   "fieldname": "ph_plus_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_102",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_63",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "algecide.new_uom",
+   "fieldname": "algecide_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_72",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "floculant.new_uom",
+   "fetch_if_empty": 1,
+   "fieldname": "floculant_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_67",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "add_disinfectant_2_section",
+   "fieldtype": "Section Break",
+   "label": "Add Disinfectant 2"
+  },
+  {
+   "fieldname": "add_dis_2",
+   "fieldtype": "Button",
+   "label": "Add Disinfectant 2"
+  },
+  {
+   "fieldname": "column_break_77",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pool.disinfection2",
+   "fetch_if_empty": 1,
+   "fieldname": "disinfectant_2",
+   "fieldtype": "Link",
+   "label": "Disinfectant 2",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "column_break_79",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "disinfectant_2.new_concetration",
+   "fieldname": "coefficient_disinfectant_2",
+   "fieldtype": "Float",
+   "label": "Coefficient Disinfectant 2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_81",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "dis_2_addition",
+   "fieldtype": "Data",
+   "label": "Disinfectant 2 Addition"
+  },
+  {
+   "fieldname": "column_break_83",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "disinfectant_2.new_uom",
+   "fieldname": "dis_2_uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "default": "None",
+   "fieldname": "algae",
+   "fieldtype": "Select",
+   "label": "Algae (Visual)",
+   "options": "None\nTraces\nModerate",
+   "translatable": 1
+  },
+  {
+   "default": "Visible",
+   "fieldname": "visibility",
+   "fieldtype": "Select",
+   "label": "Pool Bottom (Visual)",
+   "options": "Visible\nBlurry\nNon Visible",
+   "translatable": 1
+  },
+  {
+   "fieldname": "copper",
+   "fieldtype": "Float",
+   "label": "Copper"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "pool.ideal_copper",
+   "fieldname": "pool_copper",
+   "fieldtype": "Float",
+   "label": "Ideal Copper",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Daily",
+   "fieldname": "mode",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Mode",
+   "options": "\nDaily\nWeekly\nBimonthly\nSuperchlorination"
+  },
+  {
+   "fieldname": "maintain_section",
+   "fieldtype": "Section Break",
+   "label": "Maintain"
+  },
+  {
+   "default": "0",
+   "fieldname": "sweeping",
+   "fieldtype": "Check",
+   "label": "Sweeping"
+  },
+  {
+   "fieldname": "column_break_34",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "backwash",
+   "fieldtype": "Check",
+   "label": "Backwash"
+  },
+  {
+   "fieldname": "cb_1024",
+   "fieldtype": "Column Break"
   }
  ],
- "modified": "2020-05-30 09:29:28.769097",
+ "is_submittable": 1,
+ "modified": "2020-05-31 17:26:51.116896",
  "modified_by": "Administrator",
  "module": "Water Safety",
  "name": "Pool Record",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
@@ -425,9 +685,37 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water User",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
   }
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
+ "title_field": "pool_name",
  "track_changes": 1
 }

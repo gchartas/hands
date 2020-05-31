@@ -7,8 +7,10 @@
   "parameter",
   "before_use",
   "after_user",
-  "parameter_check",
-  "parameter_check_2",
+  "daily",
+  "switch",
+  "weekly",
+  "departure",
   "other",
   "item_cleaning",
   "item_disinfection",
@@ -22,21 +24,6 @@
    "in_list_view": 1,
    "label": "Parameter Name",
    "reqd": 1
-  },
-  {
-   "columns": 1,
-   "default": "0",
-   "fieldname": "parameter_check",
-   "fieldtype": "Check",
-   "in_list_view": 1,
-   "label": "Daily"
-  },
-  {
-   "default": "0",
-   "fieldname": "parameter_check_2",
-   "fieldtype": "Check",
-   "in_list_view": 1,
-   "label": "Weekly"
   },
   {
    "fieldname": "item_cleaning",
@@ -56,20 +43,18 @@
    "default": "0",
    "fieldname": "before_use",
    "fieldtype": "Check",
-   "in_list_view": 1,
    "label": "Before Use"
   },
   {
    "default": "0",
    "fieldname": "after_user",
    "fieldtype": "Check",
-   "in_list_view": 1,
    "label": "After User"
   },
   {
    "default": "0",
    "fieldname": "other",
-   "fieldtype": "Check",
+   "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Other"
   },
@@ -77,10 +62,39 @@
    "fieldname": "method",
    "fieldtype": "Small Text",
    "label": "Method"
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "daily",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Daily"
+  },
+  {
+   "default": "0",
+   "fieldname": "switch",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Switch"
+  },
+  {
+   "default": "0",
+   "fieldname": "weekly",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Weekly"
+  },
+  {
+   "default": "0",
+   "fieldname": "departure",
+   "fieldtype": "Check",
+   "in_list_view": 1,
+   "label": "Departure"
   }
  ],
  "istable": 1,
- "modified": "2020-05-29 12:39:57.854030",
+ "modified": "2020-05-30 16:24:23.988875",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Place Check Template Parameter",

@@ -17,7 +17,30 @@
   "column_break_10",
   "ideal_ph",
   "column_break_12",
-  "ideal_alkalinity"
+  "ideal_alkalinity",
+  "column_break_14",
+  "ideal_copper",
+  "maintenance_program_section",
+  "disinfection1",
+  "disinfection2",
+  "ph_minus",
+  "ph_plus",
+  "algecide",
+  "flocculant",
+  "column_break_21",
+  "d1_frequency",
+  "d2_frequency",
+  "ph1_frequency",
+  "ph2_frequency",
+  "al_frequency",
+  "fl_frequency",
+  "column_break_28",
+  "d1_addition",
+  "d2_addition",
+  "ph1_addition",
+  "ph2_addition",
+  "al_addition",
+  "fl_addition"
  ],
  "fields": [
   {
@@ -88,9 +111,127 @@
    "fieldname": "ideal_alkalinity",
    "fieldtype": "Float",
    "label": "Ideal Alkalinity"
+  },
+  {
+   "fieldname": "maintenance_program_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance Program"
+  },
+  {
+   "fieldname": "disinfection1",
+   "fieldtype": "Link",
+   "label": "Disinfection 1",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "disinfection2",
+   "fieldtype": "Link",
+   "label": "Disinfection 2",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "ph_minus",
+   "fieldtype": "Link",
+   "label": "pH Minus (Acid)",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "ph_plus",
+   "fieldtype": "Link",
+   "label": "pH Plus (Base)",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "algecide",
+   "fieldtype": "Link",
+   "label": "Algecide",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "flocculant",
+   "fieldtype": "Link",
+   "label": "Flocculant",
+   "options": "Chemicals"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d1_frequency",
+   "fieldtype": "Data",
+   "label": "Disinfectant1 Frequency Check"
+  },
+  {
+   "fieldname": "d2_frequency",
+   "fieldtype": "Data",
+   "label": "Disinfectant2 Frequency"
+  },
+  {
+   "fieldname": "ph1_frequency",
+   "fieldtype": "Data",
+   "label": "pH Minus Frequency"
+  },
+  {
+   "fieldname": "ph2_frequency",
+   "fieldtype": "Data",
+   "label": "pH Plus Frequency"
+  },
+  {
+   "fieldname": "al_frequency",
+   "fieldtype": "Data",
+   "label": "Algecide Frequency"
+  },
+  {
+   "fieldname": "fl_frequency",
+   "fieldtype": "Data",
+   "label": "Flocculant Frequency"
+  },
+  {
+   "fieldname": "column_break_28",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "d1_addition",
+   "fieldtype": "Data",
+   "label": "Disinfectant1 Addition"
+  },
+  {
+   "fieldname": "d2_addition",
+   "fieldtype": "Data",
+   "label": "Disinfectant2 Addition"
+  },
+  {
+   "fieldname": "ph1_addition",
+   "fieldtype": "Data",
+   "label": "pH Minus Addition"
+  },
+  {
+   "fieldname": "ph2_addition",
+   "fieldtype": "Data",
+   "label": "pH Plus Addition"
+  },
+  {
+   "fieldname": "al_addition",
+   "fieldtype": "Data",
+   "label": "Algecide Addition"
+  },
+  {
+   "fieldname": "fl_addition",
+   "fieldtype": "Data",
+   "label": "Flocculant Addition"
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ideal_copper",
+   "fieldtype": "Float",
+   "label": "Ideal Copper"
   }
  ],
- "modified": "2020-05-23 10:53:17.347880",
+ "modified": "2020-05-31 13:06:55.555026",
  "modified_by": "Administrator",
  "module": "Water Safety",
  "name": "Pool",
@@ -109,7 +250,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "track_changes": 1

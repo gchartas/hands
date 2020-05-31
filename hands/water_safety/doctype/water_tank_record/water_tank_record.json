@@ -1,0 +1,253 @@
+{
+ "autoname": "naming_series:",
+ "creation": "2020-05-31 11:42:37.958059",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "water_tank",
+  "water_tank_volume",
+  "max_height",
+  "column_break_4",
+  "water_tank_name",
+  "ideal_free_chlorine",
+  "log_section",
+  "now",
+  "cb_1",
+  "date",
+  "column_break_12",
+  "time",
+  "section_break_14",
+  "height",
+  "column_break_11",
+  "free_chlorine",
+  "column_break_18",
+  "volume",
+  "maintenance_section",
+  "add_chlorine",
+  "column_break_17",
+  "chlorine",
+  "column_break_19",
+  "coefficient",
+  "column_break_21",
+  "chlorine_addition",
+  "column_break_23",
+  "uom",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "default": "WTR-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "WTR-",
+   "read_only": 1
+  },
+  {
+   "fieldname": "water_tank",
+   "fieldtype": "Link",
+   "label": "Water Tank",
+   "options": "Water Tank"
+  },
+  {
+   "fetch_from": "water_tank.tank_name",
+   "fieldname": "water_tank_name",
+   "fieldtype": "Data",
+   "label": "Water Tank Name",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "water_tank.tank_volume",
+   "fieldname": "water_tank_volume",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Water Tank Volume",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fetch_from": "water_tank.ideal_free_chlorine",
+   "fieldname": "ideal_free_chlorine",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Ideal Free Chlorine",
+   "read_only": 1
+  },
+  {
+   "fieldname": "now",
+   "fieldtype": "Button",
+   "label": "Now"
+  },
+  {
+   "columns": 1,
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time",
+   "read_only": 1
+  },
+  {
+   "columns": 1,
+   "fieldname": "free_chlorine",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Free Chlorine"
+  },
+  {
+   "fieldname": "maintenance_section",
+   "fieldtype": "Section Break",
+   "label": "Maintenance"
+  },
+  {
+   "fieldname": "add_chlorine",
+   "fieldtype": "Button",
+   "label": "Add Chlorine"
+  },
+  {
+   "fetch_from": "water_tank.disinfectant",
+   "fetch_if_empty": 1,
+   "fieldname": "chlorine",
+   "fieldtype": "Link",
+   "label": "Chlorine",
+   "options": "Chemicals"
+  },
+  {
+   "fetch_from": "chlorine.new_concetration",
+   "fieldname": "coefficient",
+   "fieldtype": "Float",
+   "label": "Coefficient",
+   "read_only": 1
+  },
+  {
+   "fieldname": "chlorine_addition",
+   "fieldtype": "Float",
+   "label": "Chlorine Addition",
+   "precision": "0"
+  },
+  {
+   "fetch_from": "chlorine.new_uom",
+   "fieldname": "uom",
+   "fieldtype": "Link",
+   "label": "UOM",
+   "options": "UOM",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "log_section",
+   "fieldtype": "Section Break",
+   "label": "Log"
+  },
+  {
+   "fieldname": "column_break_11",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_17",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_19",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_23",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "water_tank.max_height",
+   "fieldname": "max_height",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "Max Height",
+   "read_only": 1
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Float",
+   "label": "Height"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 1,
+   "fieldname": "volume",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Volume",
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Water Tank Record",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_14",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-05-31 13:05:04.836949",
+ "modified_by": "Administrator",
+ "module": "Water Safety",
+ "name": "Water Tank Record",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "water_tank_name",
+ "track_changes": 1
+}

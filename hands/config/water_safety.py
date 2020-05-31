@@ -3,7 +3,7 @@ from frappe import _
 
 def get_data():
     return [
-        {"label": _("Pool"),
+        {"label": _("Records"),
             "items": [
                 {
                     "type": "doctype",
@@ -11,7 +11,19 @@ def get_data():
                 },
                 {
                     "type": "doctype",
+                    "name": "Water Tank Record",
+                },
+            ]
+        },
+        {"label": _("Setup"),
+            "items": [
+                {
+                    "type": "doctype",
                     "name": "Pool",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Water Tank",
                 },
                 {
                     "type": "doctype",
@@ -20,5 +32,12 @@ def get_data():
                 },
             ]
         },
+        {"label": _("Laboratory"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "Testing Records",
+                },
+            ]
+        },
     ]
-
