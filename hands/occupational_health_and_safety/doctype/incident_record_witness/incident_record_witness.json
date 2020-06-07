@@ -1,0 +1,51 @@
+{
+ "creation": "2020-06-07 09:53:55.408482",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "witness_name",
+  "tel",
+  "email",
+  "address_and_details"
+ ],
+ "fields": [
+  {
+   "allow_on_submit": 1,
+   "fieldname": "witness_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Witness Name"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "tel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tel"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "address_and_details",
+   "fieldtype": "Small Text",
+   "label": "Address and Details"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-07 09:54:44.303175",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "Incident Record Witness",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

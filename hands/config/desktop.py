@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-# -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from frappe import _
 
@@ -25,20 +24,12 @@ def get_data():
 	        "icon": "fa fa-cutlery",
 	        "type": "module",
 	        "label": _("HACCP")
-	    },
+	    },	    
 	    {
-	        "module_name": "Water Safety",
+	        "module_name": "Occupational Health and Safety",
 	        "color": "grey",
-	        "icon": "octicon octicon-git-branch",
+	        "icon": "fa fa-heartbeat",
 	        "type": "module",
-	        "label": _("Water Management")
-	    },
-	    {
-	        "module_name": "Housekeeping",
-	        "color": "grey",
-	        "icon": "octicon octicon-pulse",
-	        "type": "module",
-	        "label": _("Housekeeping")
-	    },
-
+	        "label": _("OHS")
+	    }
 	    ]

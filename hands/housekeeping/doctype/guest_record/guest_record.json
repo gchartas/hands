@@ -1,0 +1,223 @@
+{
+ "allow_import": 1,
+ "autoname": "naming_series:",
+ "creation": "2020-06-04 19:49:47.267428",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "check_in",
+  "column_break_3",
+  "check_out",
+  "guests_section",
+  "room",
+  "guest_list",
+  "amended_from",
+  "declarations_section",
+  "grt",
+  "desciption",
+  "credit_card_details_section",
+  "credit_card_number",
+  "column_break_14",
+  "cvv",
+  "column_break_16",
+  "exp_date",
+  "signature_section",
+  "guest_signature",
+  "guest_name"
+ ],
+ "fields": [
+  {
+   "default": "GCI-",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "GCI-",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "check_in",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Check In"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "allow_on_submit": 1,
+   "fieldname": "check_out",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Date Check Out"
+  },
+  {
+   "fieldname": "guests_section",
+   "fieldtype": "Section Break",
+   "label": "Guests"
+  },
+  {
+   "fieldname": "room",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Room",
+   "options": "Place Check Template"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Guest Record",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "guest_list",
+   "fieldtype": "Table",
+   "label": "Guest List",
+   "options": "Guest List"
+  },
+  {
+   "fieldname": "declarations_section",
+   "fieldtype": "Section Break",
+   "label": "Declarations"
+  },
+  {
+   "fieldname": "grt",
+   "fieldtype": "Link",
+   "label": "GRT",
+   "options": "Guest Record Template"
+  },
+  {
+   "fetch_from": "grt.description",
+   "fieldname": "desciption",
+   "fieldtype": "Text Editor",
+   "label": "Desciption",
+   "read_only": 1
+  },
+  {
+   "fieldname": "signature_section",
+   "fieldtype": "Section Break",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "guest_signature",
+   "fieldtype": "Signature",
+   "label": "Guest Signature"
+  },
+  {
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "label": "Guest Name"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "credit_card_details_section",
+   "fieldtype": "Section Break",
+   "label": "Credit Card Details"
+  },
+  {
+   "fieldname": "credit_card_number",
+   "fieldtype": "Float",
+   "label": "Credit Card Number",
+   "permlevel": 2,
+   "precision": "0"
+  },
+  {
+   "fieldname": "cvv",
+   "fieldtype": "Float",
+   "label": "CVV",
+   "permlevel": 2,
+   "precision": "0"
+  },
+  {
+   "fieldname": "exp_date",
+   "fieldtype": "Date",
+   "label": "Exp Date",
+   "permlevel": 2
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_16",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-06-07 08:50:49.450996",
+ "modified_by": "Administrator",
+ "module": "Housekeeping",
+ "name": "Guest Record",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping Manager",
+   "share": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Receptionist",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "permlevel": 2,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Receptionist",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "room",
+ "track_changes": 1
+}

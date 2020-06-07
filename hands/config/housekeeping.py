@@ -35,7 +35,16 @@ def get_data():
                 },
             ]
         },
-
-
-
+        {"label": _("Guest"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "Guest Record",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Guest Record Template",
+                },
+            ]
+        },
     ]

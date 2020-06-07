@@ -19,7 +19,14 @@
   "parameters",
   "remarks",
   "vitals_measurements_section",
-  "amended_from"
+  "amended_from",
+  "form_details_section",
+  "title",
+  "ref_no",
+  "author",
+  "publish_date",
+  "rev",
+  "company"
  ],
  "fields": [
   {
@@ -103,10 +110,64 @@
    "fieldname": "remarks",
    "fieldtype": "Small Text",
    "label": "Remarks"
+  },
+  {
+   "fieldname": "form_details_section",
+   "fieldtype": "Section Break",
+   "label": "Form Details"
+  },
+  {
+   "default": "Employee Daily Check",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Title",
+   "print_hide": 1,
+   "translatable": 1
+  },
+  {
+   "default": "OHS-01.01",
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Ref Number",
+   "print_hide": 1
+  },
+  {
+   "default": "\u0393\u03b5\u03ce\u03c1\u03b3\u03b9\u03bf\u03c2 \u03a7\u03b1\u03c1\u03c4\u03ac\u03c2-\u03a3\u03c9\u03bb\u03b7\u03bd\u03b1\u03c1\u03b1\u03af\u03bf\u03c2",
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Author",
+   "print_hide": 1,
+   "translatable": 1
+  },
+  {
+   "default": "2020-06-07",
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "hidden": 1,
+   "label": "Publish Date",
+   "print_hide": 1
+  },
+  {
+   "default": "1.0",
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Rev",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-30 15:31:35.645894",
+ "modified": "2020-06-07 21:36:06.973991",
  "modified_by": "Administrator",
  "module": "Occupational Health and Safety",
  "name": "Employee Daily Check",

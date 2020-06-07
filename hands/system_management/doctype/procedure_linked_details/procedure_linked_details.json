@@ -16,17 +16,17 @@
    "options": "Procedure"
   },
   {
+   "fetch_from": "proc_ref.title",
    "fieldname": "proc_title",
    "fieldtype": "Data",
    "in_list_view": 1,
    "label": "Procedure Title",
-   "options": "proc_ref.title",
    "read_only": 1,
    "translatable": 1
   }
  ],
  "istable": 1,
- "modified": "2020-05-21 13:35:29.307072",
+ "modified": "2020-06-03 17:43:59.199413",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Procedure Linked Details",

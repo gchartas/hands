@@ -148,7 +148,7 @@
   }
  ],
  "is_submittable": 1,
- "modified": "2020-05-30 16:21:08.791388",
+ "modified": "2020-06-03 17:54:14.956369",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Place Check Cleaning",
@@ -207,7 +207,6 @@
    "write": 1
   }
  ],
- "quick_entry": 1,
  "search_fields": "employee_name,place",
  "sort_field": "modified",
  "sort_order": "DESC",

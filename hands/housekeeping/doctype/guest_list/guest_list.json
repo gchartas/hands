@@ -1,0 +1,69 @@
+{
+ "creation": "2020-06-04 19:55:11.502772",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "guest_name",
+  "email",
+  "tel",
+  "address",
+  "birthdate",
+  "passport_no",
+  "nationality"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "guest_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u03a0\u03b5\u03bb\u03ac\u03c4\u03b7\u03c2-Guest",
+   "reqd": 1
+  },
+  {
+   "columns": 2,
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Email"
+  },
+  {
+   "columns": 1,
+   "fieldname": "tel",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "\u03a4\u03b7\u03bb-Tel"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Data",
+   "label": "Address"
+  },
+  {
+   "fieldname": "birthdate",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "passport_no",
+   "fieldtype": "Data",
+   "label": "Passport No"
+  },
+  {
+   "fieldname": "nationality",
+   "fieldtype": "Data",
+   "label": "Nationality"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-07 08:42:32.427724",
+ "modified_by": "Administrator",
+ "module": "Housekeeping",
+ "name": "Guest List",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

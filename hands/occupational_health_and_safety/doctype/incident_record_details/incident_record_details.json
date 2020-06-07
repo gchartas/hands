@@ -1,0 +1,55 @@
+{
+ "creation": "2020-06-07 09:50:43.342407",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "person",
+  "association",
+  "room",
+  "booking_ref"
+ ],
+ "fields": [
+  {
+   "columns": 3,
+   "fieldname": "person",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name of Person Involved"
+  },
+  {
+   "columns": 3,
+   "fieldname": "association",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Association with Incident"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "room",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Room"
+  },
+  {
+   "allow_on_submit": 1,
+   "columns": 1,
+   "fieldname": "booking_ref",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Booking Ref"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-07 09:56:39.241299",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "Incident Record Details",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

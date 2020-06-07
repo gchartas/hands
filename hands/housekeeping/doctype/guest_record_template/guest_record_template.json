@@ -1,0 +1,62 @@
+{
+ "allow_import": 1,
+ "autoname": "field:name1",
+ "creation": "2020-06-04 20:01:00.283546",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "name1",
+  "description"
+ ],
+ "fields": [
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "in_list_view": 1,
+   "label": "Description"
+  }
+ ],
+ "modified": "2020-06-04 20:28:58.849478",
+ "modified_by": "Administrator",
+ "module": "Housekeeping",
+ "name": "Guest Record Template",
+ "name_case": "Title Case",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

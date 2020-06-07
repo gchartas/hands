@@ -1,0 +1,44 @@
+{
+ "creation": "2020-06-07 19:42:24.837689",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ppe_equipment",
+  "quantity",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "ppe_equipment",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "PPE Equipment",
+   "options": "PPE Equipment"
+  },
+  {
+   "columns": 1,
+   "fieldname": "quantity",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Quantity",
+   "precision": "0"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "istable": 1,
+ "modified": "2020-06-07 19:49:42.743576",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "PPE Item Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
