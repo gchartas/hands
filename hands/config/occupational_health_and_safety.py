@@ -33,8 +33,38 @@ def get_data():
                     "type": "doctype",
                     "name": "PPE Equipment",
                 },
-
             ]
         },
-
+        {"label": _("Training"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "Personel Training",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Personel Training Event",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Personel Training Result",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Personel Training Feedback",
+                },
+            ]
+        },
+        {"label": _("Visitor Questionnaire"),
+            "items": [
+                {
+                    "type": "doctype",
+                    "name": "Visitors Questionnaire",
+                },
+                {
+                    "type": "doctype",
+                    "name": "Visitors Questionnaire Template",
+                },
+            ]
+        },        
         ]

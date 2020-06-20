@@ -1,0 +1,80 @@
+{
+ "allow_import": 1,
+ "autoname": "field:description",
+ "creation": "2020-06-20 21:25:00.198286",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "description",
+  "parameters"
+ ],
+ "fields": [
+  {
+   "columns": 9,
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Title",
+   "unique": 1
+  },
+  {
+   "columns": 1,
+   "default": "0",
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Questions",
+   "options": "Visitors Questionnaire Template Parameter"
+  }
+ ],
+ "modified": "2020-06-20 21:57:42.522981",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "Visitors Questionnaire Template",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "import": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "description",
+ "track_changes": 1
+}

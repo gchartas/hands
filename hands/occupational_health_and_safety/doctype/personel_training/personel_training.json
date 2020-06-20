@@ -1,0 +1,230 @@
+{
+ "allow_rename": 1,
+ "autoname": "field:training_program",
+ "creation": "2020-06-14 14:23:07.846772",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "training_program",
+  "status",
+  "column_break_3",
+  "company",
+  "section_break_5",
+  "trainer_name",
+  "trainer_email",
+  "column_break_8",
+  "supplier",
+  "contact_number",
+  "section_break_11",
+  "description",
+  "amended_from",
+  "form_details_section",
+  "title",
+  "ref_no",
+  "author",
+  "publish_date",
+  "rev",
+  "approver"
+ ],
+ "fields": [
+  {
+   "fieldname": "training_program",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Training Program",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_on_submit": 1,
+   "bold": 1,
+   "default": "Scheduled",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Scheduled\nCompleted\nCancelled"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Company",
+   "options": "Company",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "trainer_name",
+   "fieldtype": "Data",
+   "label": "Trainer Name"
+  },
+  {
+   "fieldname": "trainer_email",
+   "fieldtype": "Data",
+   "label": "Trainer Email"
+  },
+  {
+   "fieldname": "column_break_8",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "contact_number",
+   "fieldtype": "Data",
+   "label": "Contact Number"
+  },
+  {
+   "fieldname": "section_break_11",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text Editor",
+   "label": "Description",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Training Program",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "form_details_section",
+   "fieldtype": "Section Break",
+   "label": "Form Details"
+  },
+  {
+   "default": "Training Program",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "print_hide": 1
+  },
+  {
+   "default": "OHS-02.01",
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Ref Number",
+   "print_hide": 1
+  },
+  {
+   "default": "\u0393\u03b5\u03ce\u03c1\u03b3\u03b9\u03bf\u03c2 \u03a7\u03b1\u03c1\u03c4\u03ac\u03c2-\u03a3\u03c9\u03bb\u03b7\u03bd\u03b1\u03c1\u03b1\u03af\u03bf\u03c2",
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author",
+   "print_hide": 1
+  },
+  {
+   "default": "2020-06-07",
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date",
+   "print_hide": 1
+  },
+  {
+   "default": "1.0",
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Rev",
+   "print_hide": 1
+  },
+  {
+   "default": "General Manager",
+   "fieldname": "approver",
+   "fieldtype": "Data",
+   "label": "Approver",
+   "print_hide": 1
+  }
+ ],
+ "modified": "2020-06-14 14:39:58.297353",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "Personel Training",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Front Office Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping Manager",
+   "share": 1
+  }
+ ],
+ "show_name_in_global_search": 1,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "training_program",
+ "track_changes": 1
+}

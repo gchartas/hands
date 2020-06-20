@@ -1,27 +1,32 @@
 {
  "allow_import": 1,
  "autoname": "naming_series:",
- "creation": "2020-05-24 15:22:08.186688",
+ "creation": "2020-06-20 22:06:36.716738",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
   "naming_series",
-  "employee",
-  "column_break_3",
-  "employee_name",
-  "section_break_5",
+  "visitor_name",
+  "column_break_4",
+  "reason_for_visit",
+  "column_break_6",
   "date",
-  "column_break_7",
-  "time",
-  "symptoms_check_section",
-  "template",
+  "section_break_8",
+  "start",
+  "start_time",
   "column_break_11",
-  "temp",
-  "section_break_13",
+  "finish",
+  "finish_time",
+  "column_break_14",
+  "visit_place",
+  "section_break_11",
+  "template",
   "parameters",
-  "remarks",
-  "vitals_measurements_section",
+  "section_break_13",
+  "signature",
+  "cb_1",
+  "declaration",
   "amended_from",
   "form_details_section",
   "title",
@@ -33,115 +38,147 @@
  ],
  "fields": [
   {
-   "fieldname": "employee",
-   "fieldtype": "Link",
-   "label": "Employee",
-   "options": "Employee"
-  },
-  {
-   "fetch_from": "employee.employee_name",
-   "fieldname": "employee_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Employee Name",
-   "read_only": 1
-  },
-  {
-   "default": "EC-",
+   "default": "VQ-",
    "fieldname": "naming_series",
    "fieldtype": "Select",
    "hidden": 1,
    "label": "Title",
-   "options": "EC-",
+   "options": "VQ-",
    "print_hide": 1,
    "read_only": 1
   },
   {
-   "fieldname": "column_break_3",
+   "fieldname": "visitor_name",
+   "fieldtype": "Data",
+   "label": "Visitor Name"
+  },
+  {
+   "fieldname": "column_break_4",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "section_break_5",
-   "fieldtype": "Section Break"
+   "fieldname": "reason_for_visit",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason for Visit",
+   "translatable": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
   },
   {
    "default": "Today",
    "fieldname": "date",
-   "fieldtype": "Date",
+   "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Date"
   },
   {
-   "fieldname": "column_break_7",
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "start",
+   "fieldtype": "Button",
+   "label": "Start"
+  },
+  {
+   "fieldname": "start_time",
+   "fieldtype": "Time",
+   "label": "Start Time"
+  },
+  {
+   "fieldname": "column_break_11",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "time",
+   "fieldname": "finish",
+   "fieldtype": "Button",
+   "label": "Finish"
+  },
+  {
+   "fieldname": "finish_time",
    "fieldtype": "Time",
-   "label": "Time"
+   "label": "Finish Time"
   },
   {
-   "fieldname": "symptoms_check_section",
-   "fieldtype": "Section Break",
-   "label": "Symptoms Check"
+   "fieldname": "column_break_14",
+   "fieldtype": "Section Break"
   },
   {
-   "fieldname": "vitals_measurements_section",
+   "fieldname": "visit_place",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Visit Place",
+   "translatable": 1
+  },
+  {
+   "fieldname": "section_break_11",
    "fieldtype": "Section Break",
-   "label": "Vitals Measurements"
+   "label": "Questionnaire"
   },
   {
    "fieldname": "template",
    "fieldtype": "Link",
    "label": "Template",
-   "options": "Employee Daily Check Template"
+   "options": "Visitors Questionnaire Template"
+  },
+  {
+   "fieldname": "parameters",
+   "fieldtype": "Table",
+   "label": "Questions",
+   "options": "Visitors Questionnaire Parameter"
+  },
+  {
+   "fieldname": "section_break_13",
+   "fieldtype": "Section Break",
+   "label": "Signatures"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "cb_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "I have answered these questions, to the best of my knowledge.",
+   "fieldname": "declaration",
+   "fieldtype": "Data",
+   "label": "Declaration",
+   "read_only": 1,
+   "translatable": 1
   },
   {
    "fieldname": "amended_from",
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Employee Daily Check",
+   "options": "Visitors Questionnaire",
    "print_hide": 1,
    "read_only": 1
   },
   {
-   "fieldname": "parameters",
-   "fieldtype": "Table",
-   "label": "Employee Daily Check Parameters",
-   "options": "Employee Daily Check Parameter"
-  },
-  {
-   "fieldname": "remarks",
-   "fieldtype": "Small Text",
-   "label": "Remarks"
-  },
-  {
+   "collapsible": 1,
    "fieldname": "form_details_section",
    "fieldtype": "Section Break",
    "label": "Form Details"
   },
   {
-   "default": "Employee Daily Check",
+   "default": "Visitors Questionnaire",
    "fieldname": "title",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Title",
    "print_hide": 1,
    "translatable": 1
   },
   {
-   "default": "OHS-03.01",
-   "fieldname": "ref_no",
-   "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Ref Number",
-   "print_hide": 1
-  },
-  {
    "default": "\u0393\u03b5\u03ce\u03c1\u03b3\u03b9\u03bf\u03c2 \u03a7\u03b1\u03c1\u03c4\u03ac\u03c2-\u03a3\u03c9\u03bb\u03b7\u03bd\u03b1\u03c1\u03b1\u03af\u03bf\u03c2",
    "fieldname": "author",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Author",
    "print_hide": 1,
    "translatable": 1
@@ -150,7 +187,6 @@
    "default": "2020-06-07",
    "fieldname": "publish_date",
    "fieldtype": "Date",
-   "hidden": 1,
    "label": "Publish Date",
    "print_hide": 1
   },
@@ -158,7 +194,6 @@
    "default": "1.0",
    "fieldname": "rev",
    "fieldtype": "Data",
-   "hidden": 1,
    "label": "Rev",
    "print_hide": 1
   },
@@ -170,26 +205,18 @@
    "print_hide": 1
   },
   {
-   "fieldname": "column_break_11",
-   "fieldtype": "Column Break"
-  },
-  {
-   "default": "36.6",
-   "fieldname": "temp",
-   "fieldtype": "Float",
-   "label": "Temp (deg C)",
-   "precision": "1"
-  },
-  {
-   "fieldname": "section_break_13",
-   "fieldtype": "Section Break"
+   "default": "DFB-07.01",
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Ref Number",
+   "print_hide": 1
   }
  ],
  "is_submittable": 1,
- "modified": "2020-06-20 23:08:22.670478",
+ "modified": "2020-06-20 23:25:03.640778",
  "modified_by": "Administrator",
  "module": "Occupational Health and Safety",
- "name": "Employee Daily Check",
+ "name": "Visitors Questionnaire",
  "owner": "Administrator",
  "permissions": [
   {
@@ -237,19 +264,6 @@
    "write": 1
   },
   {
-   "create": 1,
-   "email": 1,
-   "export": 1,
-   "if_owner": 1,
-   "print": 1,
-   "read": 1,
-   "report": 1,
-   "role": "Service User",
-   "share": 1,
-   "submit": 1,
-   "write": 1
-  },
-  {
    "cancel": 1,
    "create": 1,
    "delete": 1,
@@ -264,21 +278,24 @@
    "write": 1
   },
   {
+   "amend": 1,
+   "cancel": 1,
    "create": 1,
+   "delete": 1,
    "email": 1,
    "export": 1,
+   "import": 1,
    "print": 1,
    "read": 1,
    "report": 1,
-   "role": "Housekeeping User",
+   "role": "Haccp Manager",
    "share": 1,
    "submit": 1,
    "write": 1
   }
  ],
- "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
- "title_field": "employee_name",
+ "title_field": "visitor_name",
  "track_changes": 1
 }

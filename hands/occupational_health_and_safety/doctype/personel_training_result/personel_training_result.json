@@ -1,0 +1,160 @@
+{
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2020-06-14 14:47:55.838725",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "training_event",
+  "section_break_3",
+  "employees",
+  "employee_emails",
+  "amended_from",
+  "form_details_section",
+  "title",
+  "ref_no",
+  "author",
+  "publish_date",
+  "rev",
+  "approver",
+  "company"
+ ],
+ "fields": [
+  {
+   "default": "TRR-.YYYY.-.#####",
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Title",
+   "options": "TRR-.YYYY.-.#####",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "training_event",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Training Event",
+   "options": "Personel Training Event",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "section_break_3",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employees",
+   "fieldtype": "Table",
+   "label": "Employees",
+   "options": "Training Result Employee"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Personel Training Result",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "employee_emails",
+   "fieldtype": "Small Text",
+   "hidden": 1,
+   "label": "Employee Emails",
+   "options": "Email"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Personel Training Result",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "form_details_section",
+   "fieldtype": "Section Break",
+   "label": "Form Details"
+  },
+  {
+   "default": "\u0391\u03c0\u03bf\u03c4\u03b5\u03bb\u03ad\u03c3\u03bc\u03b1\u03c4\u03b1 \u0395\u03ba\u03c0\u03b1\u03af\u03b4\u03b5\u03c5\u03c3\u03b7\u03c2",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "print_hide": 1
+  },
+  {
+   "default": "OHS-02.03",
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Ref Number",
+   "print_hide": 1
+  },
+  {
+   "default": "\u0393\u03b5\u03ce\u03c1\u03b3\u03b9\u03bf\u03c2 \u03a7\u03b1\u03c1\u03c4\u03ac\u03c2-\u03a3\u03c9\u03bb\u03b7\u03bd\u03b1\u03c1\u03b1\u03af\u03bf\u03c2",
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author",
+   "print_hide": 1
+  },
+  {
+   "default": "2020-06-07",
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date",
+   "print_hide": 1
+  },
+  {
+   "default": "1.0",
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Rev",
+   "print_hide": 1
+  },
+  {
+   "default": "\u0393\u03b5\u03bd\u03b9\u03ba\u03cc\u03c2 \u0394\u03b9\u03b5\u03c5\u03b8\u03c5\u03bd\u03c4\u03ae\u03c2",
+   "fieldname": "approver",
+   "fieldtype": "Data",
+   "label": "Approver"
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1
+  }
+ ],
+ "is_submittable": 1,
+ "modified": "2020-06-14 14:53:10.513676",
+ "modified_by": "Administrator",
+ "module": "Occupational Health and Safety",
+ "name": "Personel Training Result",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "title_field": "training_event"
+}
