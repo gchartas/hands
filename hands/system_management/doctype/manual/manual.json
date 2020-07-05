@@ -1,5 +1,5 @@
 {
- "autoname": "naming_series",
+ "autoname": "naming_series:",
  "creation": "2020-05-24 12:35:08.519613",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -135,10 +135,11 @@
    "options": "Company"
   }
  ],
- "modified": "2020-05-24 12:36:39.736122",
+ "modified": "2020-07-03 18:38:28.664186",
  "modified_by": "Administrator",
  "module": "System Management",
  "name": "Manual",
+ "name_case": "Title Case",
  "owner": "Administrator",
  "permissions": [
   {
@@ -152,6 +153,78 @@
    "role": "System Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Employee",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "HR User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Front Office User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Front Office Manager",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping Manager",
+   "share": 1
   }
  ],
  "sort_field": "modified",
