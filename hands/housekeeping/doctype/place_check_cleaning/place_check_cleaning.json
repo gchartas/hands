@@ -23,7 +23,14 @@
   "employee_signature",
   "employee_name",
   "column_break_15",
-  "amended_from"
+  "amended_from",
+  "form_details_section",
+  "title",
+  "ref_no",
+  "author",
+  "publish_date",
+  "rev",
+  "company"
  ],
  "fields": [
   {
@@ -144,10 +151,59 @@
    "fieldname": "cleaning_section_section",
    "fieldtype": "Section Break",
    "label": "Cleaning Section"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "form_details_section",
+   "fieldtype": "Section Break",
+   "label": "Form Details"
+  },
+  {
+   "default": "Place Check Cleaning",
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title",
+   "print_hide": 1,
+   "translatable": 1
+  },
+  {
+   "default": "WD-P04-01.02",
+   "fieldname": "ref_no",
+   "fieldtype": "Data",
+   "label": "Ref Number",
+   "print_hide": 1
+  },
+  {
+   "default": "\u0393\u03b5\u03ce\u03c1\u03b3\u03b9\u03bf\u03c2 \u03a7\u03b1\u03c1\u03c4\u03ac\u03c2-\u03a3\u03c9\u03bb\u03b7\u03bd\u03b1\u03c1\u03b1\u03af\u03bf\u03c2",
+   "fieldname": "author",
+   "fieldtype": "Data",
+   "label": "Author",
+   "print_hide": 1
+  },
+  {
+   "default": "2020-06-07",
+   "fieldname": "publish_date",
+   "fieldtype": "Date",
+   "label": "Publish Date",
+   "print_hide": 1
+  },
+  {
+   "default": "1.0",
+   "fieldname": "rev",
+   "fieldtype": "Data",
+   "label": "Rev",
+   "print_hide": 1
+  },
+  {
+   "fieldname": "company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company",
+   "print_hide": 1
   }
  ],
  "is_submittable": 1,
- "modified": "2020-07-04 19:45:09.806022",
+ "modified": "2020-07-05 18:35:35.646974",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Place Check Cleaning",

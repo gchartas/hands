@@ -24,7 +24,7 @@
    "label": "Description"
   }
  ],
- "modified": "2020-06-04 20:28:58.849478",
+ "modified": "2020-07-05 17:52:03.412966",
  "modified_by": "Administrator",
  "module": "Housekeeping",
  "name": "Guest Record Template",
@@ -54,6 +54,51 @@
    "role": "Housekeeping Manager",
    "share": 1,
    "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Housekeeping User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Haccp User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Service User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Water User",
+   "share": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Receptionist",
+   "share": 1
   }
  ],
  "sort_field": "modified",
